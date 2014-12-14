@@ -19,7 +19,7 @@ Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit 
 ## Inhalt
 
 1. [Aufgabe](#aufgabe)
-2. [Hardware](#hardware)
+2. [Hardware-Set](#hardware)
 3. [Software](#software)
 4. [Wichtig: Teilnehmer-Checkliste](#checkliste)
 
@@ -28,12 +28,12 @@ Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit 
 <a name="aufgabe"></a>
 ## 1. Aufgabe
 
-In diesem Workshop steht der Spaß mit dem Arduino-Board und der Programmiersprache JavaScript im Vordergrund. Deine Kreativität ist gefragt: Überlege dir eine Anwendung für die diversen Sensoren wie Touch, Licht und Temperatur  sowie für die diversen Aktoren wie Relais, LED und Piezo-Signalgeber. Setze anschließend deine Idee im Team mit dem "Intel XDK IoT Edition" um. Es steht dir ein Galileo-Board mit dem modularen Grove-Bausatz zur Verfügung. Johannes unterstützt die Teams je nach Wissensstand mit kurzen Instruktionen zu Node.js, AngularJS, Ionic und Cordova.
+In diesem Workshop steht der Spaß mit dem Arduino-Board und der Programmiersprache JavaScript im Vordergrund. Deine Kreativität ist gefragt: Überlege dir eine Anwendung für die diversen Sensoren wie Touch, Licht und Temperatur sowie für die diversen Aktoren wie Relais, LED und Piezo-Signalgeber. Setze anschließend deine Idee im Team mit dem "Intel XDK IoT Edition" um. Es steht dir ein Galileo-Board mit dem modularen Grove-Bausatz zur Verfügung. Johannes unterstützt die Teams je nach Wissensstand mit kurzen Instruktionen zu Node.js, AngularJS, Ionic und Cordova. 
 
-Bitte beachte die Hinweise auf folgender Seite.    
+Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set mit. **Bitte beachte hierzu die Hinweise auf dieser Seite.**
 
 <a name="hardware"></a>
-## 2. Hardware
+## 2. Hardware-Set
 
 Johannes bringt folgendes Hardware-Set **einmal** mit:
 
