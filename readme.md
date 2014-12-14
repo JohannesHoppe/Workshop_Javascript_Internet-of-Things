@@ -2,10 +2,10 @@
 
 <p align="center"><img src="images/spartakiade-logo.png" width="50%"></p>
 
-<img src="images/resource-javascript.png" height="50"><img src="images/resource-arduino.png" height="50"><img src="images/resource-nodejs.png" height="50"><img src="images/resource-angularjs.png" height="50"><img src="images/resource-ionic.png" height="50"><img src="images/resource-cordova.png" height="50">
+<img src="images/resource-javascript.png" height="60"><img src="images/resource-arduino.png" height="60"><img src="images/resource-nodejs.png" height="60"><img src="images/resource-angularjs.png" height="60"><img src="images/resource-ionic.png" height="60"><img src="images/resource-cordova.png" height="60">
 
 
-Jetzt Termin reservieren.
+Jetzt Termin reservieren.  
 Die nächste Spartakiade findet am 21.–22. März 2015 in Berlin statt.
 
 Web: http://spartakiade.org/  
