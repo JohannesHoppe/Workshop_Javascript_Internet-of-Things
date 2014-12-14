@@ -2,7 +2,7 @@
 
 <p align="center"><img src="images/spartakiade-logo.png" width="50%"></p>
 
-<img src="images/resource-javascript.png" height="60"><img src="images/resource-arduino.png" height="60"><img src="images/resource-nodejs.png" height="60"><img src="images/resource-angularjs.png" height="60"><img src="images/resource-ionic.png" height="60"><img src="images/resource-cordova.png" height="60">
+<img src="images/resource-javascript.png" height="55"><img src="images/resource-arduino.png" height="55"><img src="images/resource-nodejs.png" height="55"><img src="images/resource-angularjs.png" height="55"><img src="images/resource-ionic.png" height="55"><img src="images/resource-cordova.png" height="55">
 
 
 Jetzt Termin reservieren.  
