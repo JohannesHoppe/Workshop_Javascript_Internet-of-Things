@@ -14,13 +14,14 @@ Google+: https://plus.google.com/u/0/+Dotnet-Leipzig-DE
 
 # Workshop: IoT mit JavaScript<br>von Johannes Hoppe
 
-Inhalt: Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit Node.js und AngularJS.
+Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit Node.js und AngularJS.
 
 ## Inhalt
 
 1. [Aufgabe](#aufgabe)
 2. [Hardware](#hardware)
 3. [Software](#software)
+4. [Wichtig: Teilnehmer-Checkliste](#checkliste)
 
 <hr>
 
@@ -42,7 +43,6 @@ Johannes bringt folgendes Hardware-Set **einmal** mit:
 [![Galileo Board](images/galileo_gen_2_board.jpg)](galileo_board.md)
 [![Starter Kit](images/devkit_image2.jpg)](seeed_studio_grove_starter_intel_iot.md)
 
-
 Damit lassen sich die erstellten Ideen sofort auf einem Arduino-Board ausprobieren. Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set mit, dann sinkt die Wartezeit und es steigt der Spaß-Faktor. Eine nähere Beschreibung und Links zu deutschen Online-Shops sind auf den beiden oben verlinkten Seiten zu finden. Das Hardware-Set hat einen Preis von ca. 160€ ohne Versandkosten. 
 
 <a name="software"></a>
@@ -63,7 +63,18 @@ Eine 8GB SD liegt dem Starter Kit bei. Johannes wird bereits mehrere SD Karten m
 
 Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. Es beinhaltet eine IDE um die JavaScript-Programme (Node.js) zu entwickeln und diese auf das Board zu deployen.
 
-Download XDK: https://software.intel.com/en-us/html5/xdk-iot
+**Download XDK**: https://software.intel.com/en-us/html5/xdk-iot  
 (verfügbar für Apple OS X, Microsoft Windows und Linux)
 
-  
+<a name="checkliste"></a>
+## 4. Teilnehmer-Checkliste
+
+Als Teilnehmer solltest du mitbringen:
+
+1. Laptop (Win, Mac oder Linux) mit SD-Kartenleser
+2. Ein installiertes "Intel XDK IoT Edition"
+
+Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set mit:
+
+1. [Intel Galileo Gen 2](galileo_board.md) - ca. 80€
+2. [Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2](seeed_studio_grove_starter_intel_iot.md) - ca. 80€
