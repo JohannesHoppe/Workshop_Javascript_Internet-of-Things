@@ -1,10 +1,11 @@
 #Spartakiade 2015
 ![Logo](images/spartakiade-logo.png)
 
-# Workshop: IoT mit JavaScript
-## von und mit Johannes Hoppe
+# Workshop: IoT mit JavaScript<br><small>von Johannes Hoppe</small>
 
 Spartakiade 2015: ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit Node.js und AngularJS
+
+## 
 
 
 ## Hardware
@@ -12,9 +13,9 @@ Spartakiade 2015: ein Galileo Board (Arduino), das Grove Starter Kit und ganz vi
 Johannes bringt folgendes Hardware-Set **einmal** mit:
 
 1. Board: [Intel Galileo Gen 2](galileo_board.md)
-2. Grove Base Shield und Sensoren: [Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2](seeed_studio_grove_starter_intel_iot.md)
+2. Base Shield und Bausatz: [Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2](seeed_studio_grove_starter_intel_iot.md)
 
-[![Galileo Board](images/galileo_gen_2_board.jpg)](seeed_studio_grove_starter_intel_iot.md)
+[![Galileo Board](images/galileo_gen_2_board.jpg)](galileo_board.md)
 [![Starter Kit](images/devkit_image2.jpg)](seeed_studio_grove_starter_intel_iot.md)
 
 
