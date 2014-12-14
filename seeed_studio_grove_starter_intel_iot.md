@@ -26,3 +26,10 @@ Während des Workshops kommt das "Seeed Studio Grove starter kit plus - Intel Io
 * 26AWG Grove Cable × 15
 
 ![Galileo Board](images/devkit_image.jpg)
+
+
+# Links:
+
+* Produktinformation: [Intel® Galileo Gen 2 Development Board](http://www.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html)
+* Deutscher Shop: [bei Conrad kaufen](http://www.conrad.de/ce/de/product/1234343/Intel-Galileo-Gen-2-256-MB)
+* Deutscher Shop: [bei EXP Tech kaufen](http://www.exp-tech.de/intel-galileo-gen2)
