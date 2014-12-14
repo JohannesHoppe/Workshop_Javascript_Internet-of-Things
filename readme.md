@@ -1,13 +1,8 @@
 #Spartakiade 2015
-![Logo](images/spartakiade-logo.png)
 
-![Logo](images/square_logo_arduino.png)
-![Logo](images/resource-nodejs.png)
-![Logo](images/resource-angularjs.png)
-![Logo](images/resource-ionic.png)
-![Logo](images/resource-cordova.png)
+<p align="center"><img src="images/spartakiade-logo.png" width="50%"></p>
 
-<img src="images/resource-cordova.png" height="100">
+<img src="images/square_logo_arduino.png" height="100"><img src="images/resource-nodejs.png" height="100"><img src="images/resource-angularjs.png" height="100"><img src="images/resource-ionic.png" height="100"><img src="images/resource-cordova.png" height="100">
 
 
 Jetzt Termin reservieren.
