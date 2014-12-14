@@ -30,6 +30,7 @@ Während des Workshops kommt das "Seeed Studio Grove starter kit plus - Intel Io
 
 # Links:
 
-* Produktinformation: [Intel® Galileo Gen 2 Development Board](http://www.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html)
+* Produktinformation: [Intel® IoT Developer Kit](https://software.intel.com/en-us/iot/devkit)
+* Produktinformation: [Grove starter kit plus – Intel IoT Edition for Intel Galileo Gen 2](http://www.seeedstudio.com/depot/Grove-starter-kit-plus-Intel-IoT-Edition-for-Intel-Galileo-Gen-2-p-1978.html) (15% Coupon Code: 0a2e457cf9)
 * Deutscher Shop: [bei Conrad kaufen](http://www.conrad.de/ce/de/product/1234343/Intel-Galileo-Gen-2-256-MB)
 * Deutscher Shop: [bei EXP Tech kaufen](http://www.exp-tech.de/intel-galileo-gen2)
