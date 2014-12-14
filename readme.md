@@ -2,7 +2,7 @@
 
 <p align="center"><img src="images/spartakiade-logo.png" width="50%"></p>
 
-<img src="images/resource-javascript.png" height="55"><img src="images/resource-arduino.png" height="55"><img src="images/resource-nodejs.png" height="55"><img src="images/resource-angularjs.png" height="55"><img src="images/resource-ionic.png" height="55"><img src="images/resource-cordova.png" height="55">
+<p align="center"><img src="images/resource-javascript.png" height="55"><img src="images/resource-arduino.png" height="55"><img src="images/resource-nodejs.png" height="55"><img src="images/resource-angularjs.png" height="55"><img src="images/resource-ionic.png" height="55"><img src="images/resource-cordova.png" height="55"></p>
 
 
 Jetzt Termin reservieren.  
@@ -18,14 +18,21 @@ Inhalt: Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScr
 
 ## Inhalt
 
-1. [Hardware](#hardware)
-2. [Software](#software)
-3. [Aufgabe](#aufgabe)
+1. [Aufgabe](#aufgabe)
+2. [Hardware](#hardware)
+3. [Software](#software)
 
 <hr>
 
+<a name="aufgabe"></a>
+## 1. Aufgabe
+
+In diesem Workshop steht der Spaß mit dem Arduino-Board und der Programmiersprache JavaScript im Vordergrund. Deine Kreativität ist gefragt: Überlege dir eine Anwendung für die diversen Sensoren wie Touch, Licht und Temperatur  sowie für die diversen Aktoren wie Relais, LED und Piezo-Signalgeber. Setze anschließend deine Idee im Team mit dem "Intel XDK IoT Edition" um. Es steht dir ein Galileo-Board mit dem modularen Grove-Bausatz zur Verfügung. Johannes unterstützt die Teams je nach Wissensstand mit kurzen Instruktionen zu Node.js, AngularJS, Ionic und Cordova.
+
+Bitte beachte die Hinweise auf folgender Seite.    
+
 <a name="hardware"></a>
-## 1. Hardware
+## 2. Hardware
 
 Johannes bringt folgendes Hardware-Set **einmal** mit:
 
@@ -39,7 +46,7 @@ Johannes bringt folgendes Hardware-Set **einmal** mit:
 Damit lassen sich die erstellten Ideen sofort auf einem Arduino-Board ausprobieren. Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set mit, dann sinkt die Wartezeit und es steigt der Spaß-Faktor. Eine nähere Beschreibung und Links zu deutschen Online-Shops sind auf den beiden oben verlinkten Seiten zu finden. Das Hardware-Set hat einen Preis von ca. 160€ ohne Versandkosten. 
 
 <a name="software"></a>
-## 2. Software
+## 3. Software
 
 Intel hat für das Galileo Board ein "Yocto 1.6" Linux vorgesehen. Auf diesem Betriebssystem lassen sich Dämons wie LighttPD and Node.js ausführen. Das Board-Boot Image wird auf eine SD-Karte kopiert kann hier herunter geladen werden:
 
@@ -59,7 +66,4 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 Download XDK: https://software.intel.com/en-us/html5/xdk-iot
 (verfügbar für Apple OS X, Microsoft Windows und Linux)
 
-<a name="aufgabe"></a>
-## 3. Aufgabe
-
-In dem Workshop wird Johannes eine Einführung zu Node.js und AngularJS / Ionic Framework geben. Mit Node.js wird das Board programmiert und eine REST-Schnittstelle bereitgestellt. Mit AngularJS wird eine Companion-App für das Board realisiert. Was für eine Anwendung dabei heraus kommt, steht noch nicht fest. Ob allein oder als Team, deine Kreativität ist gefragt.    
+  
