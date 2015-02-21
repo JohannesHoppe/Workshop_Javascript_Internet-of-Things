@@ -52,12 +52,12 @@ Intel hat für das Galileo Board ein "Yocto 1.6" Linux vorgesehen. Auf diesem Be
 
 [Boot-Image (207MB)](https://software.intel.com/sites/landingpage/iotdk/board-boot-image.html)
 
-Anleitungen für:
+Anleitungen zum Schreiben des Boot-Images auf die SD-Karte:
 * [Windows](https://software.intel.com/en-us/node/530353)
 * [Mac OS](https://software.intel.com/en-us/node/530415)
 * [Linux](https://software.intel.com/en-us/node/532598)
 
-Eine 8GB SD liegt dem Starter Kit bei. Johannes wird bereits mehrere SD Karten mit Node.js vorbereitet haben.
+Eine 8GB SD liegt dem Starter Kit bei. <strong>Johannes wird bereits alle SD-Karten vorbereitet haben!</strong>
 
 # Intel XDK IoT Edition (Node.js)
 
@@ -66,8 +66,15 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 **Download XDK**: https://software.intel.com/en-us/html5/xdk-iot  
 (verfügbar für Apple OS X, Microsoft Windows und Linux)
 
+
+## 4. Getting Started
+
+Ein paar Anleitungen, damit der Einstieg leichter fällt: 
+&raquo; [Getting Started (onboad LED Blink)](getting-started)
+
+
 <a name="checkliste"></a>
-## 4. Teilnehmer-Checkliste
+## 5. Teilnehmer-Checkliste
 
 Als Teilnehmer solltest du mitbringen:
 
