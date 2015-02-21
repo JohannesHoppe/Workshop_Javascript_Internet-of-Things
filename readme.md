@@ -70,7 +70,7 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 ## 4. Getting Started
 
 Ein paar Anleitungen, damit der Einstieg leichter fällt: 
-&raquo; [Getting Started (onboad LED Blink)](getting-started.md)
+&raquo; [Getting Started (onboad LED Blink)](getting_started.md)
 
 
 <a name="checkliste"></a>
