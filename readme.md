@@ -60,7 +60,7 @@ Anleitungen zum Schreiben des Boot-Images auf die SD-Karte:
 
 Eine 8GB SD liegt dem Starter Kit bei. <strong>Johannes wird bereits alle SD-Karten vorbereitet haben!</strong>
 
-# Intel XDK IoT Edition (Node.js)
+### Intel XDK IoT Edition (Node.js)
 
 Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. Es beinhaltet eine IDE um die JavaScript-Programme (Node.js) zu entwickeln und diese auf das Board zu deployen.
 
