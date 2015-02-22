@@ -35,7 +35,7 @@ Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set
 <a name="hardware"></a>
 ## 2. Hardware-Set
 
-Johannes bringt folgendes Hardware-Set **einmal** mit:
+Johannes bringt folgendes Hardware-Set ~~einmal~~ **dreimal** mit:
 
 1. Board: [Intel Galileo Gen 2](galileo_board.md)
 2. Base Shield und Bausatz: [Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2](seeed_studio_grove_starter_intel_iot.md)
