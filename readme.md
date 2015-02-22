@@ -21,7 +21,8 @@ Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit 
 1. [Aufgabe](#aufgabe)
 2. [Hardware-Set](#hardware)
 3. [Software](#software)
-4. [Wichtig: Teilnehmer-Checkliste](#checkliste)
+4. [Getting Started](#start)
+5. [Wichtig: Teilnehmer-Checkliste](#checkliste)
 
 <hr>
 
@@ -67,9 +68,10 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 (verfügbar für Apple OS X, Microsoft Windows und Linux)
 
 
+<a name="start"></a>
 ## 4. Getting Started
 
-Ein paar Anleitungen, damit der Einstieg leichter fällt: 
+Ein paar Anleitungen, damit der Einstieg leichter fällt:  
 &raquo; [Getting Started (onboad LED Blink)](getting_started.md)
 
 
@@ -85,3 +87,9 @@ Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set
 
 1. [Intel Galileo Gen 2](galileo_board.md) - ca. 80€
 2. [Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2](seeed_studio_grove_starter_intel_iot.md) - ca. 80€
+
+
+&nbsp;
+<hr>
+
+_&copy; 2015, Johannes Hoppe_
