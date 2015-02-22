@@ -78,7 +78,7 @@ Ein paar Anleitungen, damit der Einstieg leichter fällt:
 
 Als Teilnehmer solltest du mitbringen:
 
-1. Laptop (Win, Mac oder Linux) mit SD-Kartenleser
+1. Laptop (Win, Mac oder Linux)
 2. Ein installiertes "Intel XDK IoT Edition"
 
 Idealerweise bringen möglichst viele Teilnehmer ebenso ein eigenes Hardware-Set mit:
