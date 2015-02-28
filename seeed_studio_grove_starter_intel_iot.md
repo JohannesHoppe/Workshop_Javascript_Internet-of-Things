@@ -23,7 +23,10 @@ Während des Workshops kommt das "Seeed Studio Grove starter kit plus - Intel Io
 * [Grove LCD RGB Backlight](https://software.intel.com/en-us/iot/sensor/grove-lcd-rgb-backlight) × 1
 * 8GB Micro SD Card with an SD Card Adapter × 1
 * 9V to Barrel Jack Adapter 126mm × 1
-* 26AWG Grove Cable × 15
+* 26AWG Grove Cable **× 15**
+* Micro USB Cable × 1
+* Serial Cable × 1
+* Ethernet Cable × 1
 
 ![Galileo Board](images/devkit_image.jpg)
 
