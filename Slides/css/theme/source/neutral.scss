@@ -1,0 +1,91 @@
+/**
+ * A theme for reveal.js presentations with JS flavour
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@mixin font-face($font-family, $font-url) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-url + '.eot'); 
+        src: url($font-url + '.eot?#iefix') format('embedded-opentype'), 
+             url($font-url + '.woff') format('woff'), 
+             url($font-url + '.ttf')  format('truetype'), 
+             url($font-url + '.svg#' + $font-family) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+//@include font-face('OpenSansLight',           '../../lib/font/OpenSans/OpenSans-Light-webfont');
+//@include font-face('OpenSansLightItalic',     '../../lib/font/OpenSans/OpenSans-LightItalic-webfont');
+@include font-face('OpenSansRegular',           '../../lib/font/OpenSans/OpenSans-Regular-webfont');
+@include font-face('OpenSansItalic',            '../../lib/font/OpenSans/OpenSans-Italic-webfont');
+//@include font-face('OpenSansSemibold',        '../../lib/font/OpenSans/OpenSans-Semibold-webfont');
+//@include font-face('OpenSansSemiboldItalic',  '../../lib/font/OpenSans/OpenSans-SemiboldItalic-webfont');
+@include font-face('OpenSansBold',              '../../lib/font/OpenSans/OpenSans-Bold-webfont');
+//@include font-face('OpenSansBoldItalic',      '../../lib/font/OpenSans/OpenSans-BoldItalic-webfont');
+//@include font-face('OpenSansExtrabold',       '../../lib/font/OpenSans/OpenSans-ExtraBold-webfont');
+//@include font-face('OpenSansExtraboldItalic', '../../lib/font/OpenSans/OpenSans-ExtraBoldItalic-webfont'); 
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'OpenSansRegular', sans-serif;
+$mainColor: #2a2b2c;
+
+$headingFont: 'OpenSansBold', sans-serif;
+$headingColor: #537078;
+//$headingColor: #4E8EF7; // ionic logo baby-blue ;-)
+$headingTextShadow: none;
+$headingTextTransform: none;
+
+$backgroundColor: white;
+
+$linkColor: #0b72b5;
+$linkColorHover: darken( $linkColor, 20% );
+$selectionBackgroundColor: #26351C;
+
+
+// Background generator
+// @mixin bodyBackground() {
+//    @include radial-gradient(#8bb2bc, #FFFFFF);
+//}
+
+em, em * {
+    font-family: 'OpenSansItalic', sans-serif;
+}   
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+
+/* styles that will make the design cleaner */
+
+body { 
+    font-family: 'OpenSansRegular', sans-serif;
+}
+
+img 
+{
+    border: none !important;
+
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    
+    background-color: transparent !important;
+}
+
+.reveal ul {
+    list-style-type: none;
+}
+
+// Non-reveal.js standard css stuff -----------------
+
+@import "custom";

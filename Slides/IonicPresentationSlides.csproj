@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47418707-A462-44D1-90FD-A6578D53F506}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HybridAppsSlides</RootNamespace>
+    <AssemblyName>HybridAppsSlides</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <JSLintSkip>\js\reveal.min.js|\js\jquery.js|\js\require.js|\js\reveal.js|\js\1_jasmine-demo_fail\saveFormat.js|\js\1_jasmine-demo_fail\saveFormat.spec.js|\js\2_jasmine-demo_pass\saveFormat.js|\js\2_jasmine-demo_pass\saveFormat.spec.js|\js\3_jasmine-demo_refactor\saveFormat.js|\js\3_jasmine-demo_refactor\saveFormat.spec.js|\js\4_jasmine-demo_repeat\saveFormat.js|\js\4_jasmine-demo_repeat\saveFormat.spec.js|\js\5_jasmine-demo_jquery\jquery.myPlugin.js|\js\5_jasmine-demo_jquery\jquery.myPlugin.spec.js|\js\6_jasmine-demo_spies\garfield.js|\js\6_jasmine-demo_spies\garfield.spec.js|\lib\js\classList.js|\lib\js\head.min.js|\lib\js\html5shiv.js|\plugin\highlight\highlight.js|\plugin\markdown\markdown.js|\plugin\markdown\showdown.js|\plugin\notes\notes.js|\plugin\notes-server\client.js|\plugin\notes-server\index.js|\plugin\postmessage\postmessage.js|\plugin\remotes\remotes.js|\plugin\zoom-js\zoom.js|\js\jasmine\lib\jasmine-1.3.1\jasmine.js|\js\jasmine\lib\jasmine-1.3.1\jasmine-html.js|\js\jasmine\lib\jasmine-1.3.1\jasmine.console_reporter.js|\js\jasmine\spec\PlayerSpec.js|\js\jasmine\spec\SpecHelper.js|\js\jasmine\lib\jasmine-jquery.js|\js\jquery-1.9.1.js|\plugin\print-pdf\print-pdf.js|\js\notifier.js|\js\purl.js|\js\cookie.js|\js\knockout-2.2.1.js|\js\knockout.mapping-latest.debug.js|\js\knockout.mapping-latest.js|\js\knockout-2.2.1.debug.js|\examples\jasmine-demo\saveFormat.js|\examples\jasmine-demo\saveFormat.spec.js|\examples\jasmine-demo2\saveFormat.js|\examples\jasmine-demo2\saveFormat.spec.js|\examples\jasmine\lib\jasmine-1.3.1\jasmine.js|\examples\jasmine\lib\jasmine-1.3.1\jasmine-html.js|\examples\jasmine\lib\jasmine-1.3.1\jasmine.console_reporter.js|\examples\jasmine\lib\jasmine-jquery.js|\examples\jasmine\spec\PlayerSpec.js|\examples\jasmine\spec\SpecHelper.js|\js\jquery-2.0.3.min.js|\js\jquery-2.0.3.intellisense.js|\js\jquery-2.0.3.js|\examples\05_jasmine\jquery.myPlugin.spec.js|\examples\05_jasmine\jquery.myPlugin.js|ext-all.js|\js\extjs\ext-all-debug-w-comments.js|\js\extjs\ext-all-debug.js|\js\extjs\ext-all-dev.js|\js\extjs\ext-all-rtl-debug-w-comments.js|\js\extjs\ext-all-rtl-debug.js|\js\extjs\ext-all-rtl-dev.js|\js\extjs\ext-all-rtl.js|\js\extjs\ext-all.js|\js\extjs\ext-debug-w-comments.js|\js\extjs\ext-debug.js|\js\extjs\ext-dev.js|\js\extjs\ext-theme-access.js|\js\extjs\ext-theme-classic-sandbox.js|\js\extjs\ext-theme-classic.js|\js\extjs\ext-theme-gray.js|\js\extjs\ext-theme-neptune.js|\js\extjs\ext.js</JSLintSkip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="examples\HelloWorldAngular.js" />
+    <Content Include="examples\HelloWorldAngular.html" />
+    <Content Include="images\img_demo_horizontal.png" />
+    <Content Include="images\img_demo_vertical.png" />
+    <Content Include="images\img_ionic_phones.png" />
+    <Content Include="images\logo_angularjs-mini.svg" />
+    <Content Include="images\logo_app-builder.png" />
+    <Content Include="images\logo_cordova-mini.png" />
+    <Content Include="images\logo_cordova.png" />
+    <Content Include="images\img_mobile_hybrid_native.png" />
+    <Content Include="images\img_mobile_hybrid_native2.png" />
+    <Content Include="images\ipad-hand.png" />
+    <Content Include="images\ipad-screen.gif" />
+    <Content Include="images\iphone-hand.png" />
+    <Content Include="images\iphone-screen.gif" />
+    <Content Include="images\img_layer.png" />
+    <Content Include="images\logo_angularjs.svg" />
+    <Content Include="images\logo_ionic-creator.png" />
+    <Content Include="images\logo_ionic.svg" />
+    <Content Include="images\phonegap-you-keep-using-that-word.jpg" />
+    <Content Include="images\phonegap_API.png" />
+    <Content Include="images\screen_appbuilder.jpg" />
+    <Content Include="images\screen_creator-preview.png" />
+    <Content Include="images\img_web-view.png" />
+    <Content Include="index.html" />
+    <Content Include="images\icon_calendar.png" />
+    <Content Include="images\icon_repeat.png" />
+    <Content Include="images\icon_flash.png" />
+    <Content Include="images\icon_mustache.png" />
+    <Content Include="css\print\paper.css" />
+    <Content Include="css\print\pdf.css" />
+    <Content Include="css\reveal.css" />
+    <Content Include="css\reveal.min.css" />
+    <Content Include="css\theme\beige.css" />
+    <Content Include="css\theme\default.css" />
+    <Content Include="css\theme\night.css" />
+    <Content Include="css\theme\serif.css" />
+    <Content Include="css\theme\simple.css" />
+    <Content Include="css\theme\sky.css" />
+    <Content Include="css\theme\neutral.css" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\icon_bug.png" />
+    <Content Include="images\icon_communication.png" />
+    <Content Include="images\icon_file.png" />
+    <Content Include="images\icon_storage.png" />
+    <Content Include="images\icon_tool.png" />
+    <Content Include="images\johannes.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\pixel.png" />
+    <Content Include="js\domReady.js">
+      <DependentUpon>require.js</DependentUpon>
+    </Content>
+    <Content Include="css\theme\source\_custom.scss" />
+    <None Include="js\jquery-2.0.3.intellisense.js">
+      <DependentUpon>jquery-2.0.3.js</DependentUpon>
+    </None>
+    <Content Include="js\jquery-2.0.3.js" />
+    <Content Include="js\jquery-2.0.3.min.js">
+      <DependentUpon>jquery-2.0.3.js</DependentUpon>
+    </Content>
+    <Content Include="js\require.config.js">
+      <DependentUpon>require.js</DependentUpon>
+    </Content>
+    <Content Include="js\require.js" />
+    <Content Include="js\reveal.js" />
+    <Content Include="js\reveal.min.js">
+      <DependentUpon>reveal.js</DependentUpon>
+    </Content>
+    <Content Include="lib\css\default.css" />
+    <Content Include="lib\css\github.css" />
+    <Content Include="lib\font\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\font\font-awesome\css\font-awesome.min.css" />
+    <Content Include="lib\font\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="lib\font\ionicons\animation.html" />
+    <Content Include="lib\font\ionicons\cheatsheet.html" />
+    <Content Include="lib\font\ionicons\fonts\ionicons.svg" />
+    <Content Include="lib\font\ionicons\css\ionicons.css" />
+    <Content Include="lib\font\ionicons\css\ionicons.min.css" />
+    <Content Include="lib\font\OpenSans\Apache License Version 2.txt" />
+    <Content Include="lib\font\OpenSans\demo.html" />
+    <Content Include="lib\font\OpenSans\OpenSans-Bold-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-BoldItalic-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBold-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBoldItalic-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-Italic-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-Light-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-LightItalic-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-Regular-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-Semibold-webfont.svg" />
+    <Content Include="lib\font\OpenSans\OpenSans-SemiboldItalic-webfont.svg" />
+    <Content Include="lib\font\OpenSans\stylesheet.css" />
+    <Content Include="plugin\showSource\showSource.js" />
+    <Content Include="lib\css\zenburn.css" />
+    <Content Include="lib\font\league_gothic-webfont.svg" />
+    <Content Include="lib\js\classList.js" />
+    <Content Include="lib\js\head.min.js" />
+    <Content Include="lib\js\html5shiv.js" />
+    <Content Include="plugin\highlight\highlight.js" />
+    <Content Include="plugin\markdown\markdown.js" />
+    <Content Include="plugin\markdown\showdown.js" />
+    <Content Include="plugin\notes-server\client.js" />
+    <Content Include="plugin\notes-server\index.js" />
+    <Content Include="plugin\notes-server\notes.html" />
+    <Content Include="plugin\notes\notes.html" />
+    <Content Include="plugin\notes\notes.js" />
+    <Content Include="plugin\postmessage\example.html" />
+    <Content Include="plugin\postmessage\postmessage.js" />
+    <Content Include="plugin\print-pdf\print-pdf.js" />
+    <Content Include="plugin\remotes\remotes.js" />
+    <Content Include="plugin\zoom-js\zoom.js" />
+    <Content Include="lib\font\OpenSans\OpenSans-Italic-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-Italic-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-Italic-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-Light-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-Light-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-Light-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-Regular-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-Regular-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-Regular-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-Semibold-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-Semibold-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-SemiboldItalic-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-SemiboldItalic-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-SemiboldItalic-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-LightItalic-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-LightItalic-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-LightItalic-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-Bold-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-Bold-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-Bold-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-BoldItalic-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-BoldItalic-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-BoldItalic-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBold-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBold-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBold-webfont.woff" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBoldItalic-webfont.eot" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBoldItalic-webfont.ttf" />
+    <Content Include="lib\font\OpenSans\OpenSans-ExtraBoldItalic-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\shaders\tile-flip.fs" />
+    <None Include="css\shaders\tile-flip.vs" />
+    <None Include="css\theme\README.md" />
+    <None Include="css\theme\source\beige.scss" />
+    <None Include="css\theme\source\default.scss" />
+    <None Include="css\theme\source\night.scss" />
+    <None Include="css\theme\source\serif.scss" />
+    <None Include="css\theme\source\simple.scss" />
+    <None Include="css\theme\source\sky.scss" />
+    <Content Include="css\theme\source\neutral.scss" />
+    <None Include="css\theme\template\mixins.scss" />
+    <None Include="css\theme\template\settings.scss" />
+    <None Include="css\theme\template\theme.scss" />
+    <Content Include="js\jquery-2.0.3.min.map">
+      <DependentUpon>jquery-2.0.3.js</DependentUpon>
+    </Content>
+    <Content Include="lib\font\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="lib\font\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="lib\font\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="lib\font\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="lib\font\ionicons\fonts\ionicons.eot" />
+    <Content Include="lib\font\ionicons\fonts\ionicons.ttf" />
+    <Content Include="lib\font\ionicons\fonts\ionicons.woff" />
+    <Content Include="lib\font\ionicons\LICENSE" />
+    <None Include="lib\font\league_gothic-webfont.eot" />
+    <None Include="lib\font\league_gothic-webfont.ttf" />
+    <None Include="lib\font\league_gothic-webfont.woff" />
+    <None Include="lib\font\league_gothic_license" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50508</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1337/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

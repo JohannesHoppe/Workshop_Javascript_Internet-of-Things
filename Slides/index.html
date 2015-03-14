@@ -1,0 +1,259 @@
+﻿<!doctype html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Vortrag: Hybride Apps mit Cordova, AngularJS und Ionic</title>
+
+        <meta name="description" content="Vortrag: Hybride Apps mit Cordova, AngularJS und Ionic">
+        <meta name="author" content="Johannes Hoppe">
+        
+        <link rel="shortcut icon" href="images/favicon.ico" >
+        <meta property="og:image" content="images/logo.png" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <!--<link rel="stylesheet" href="lib/font/font-awesome/css/font-awesome.min.css" />-->
+        <link href="lib/font/ionicons/css/ionicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/theme/neutral.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+        <link href="lib/css/github.css" rel="stylesheet" />   
+        
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section style="top: -420px !important;">
+                    
+                    <small class="hidePrint" style="position: absolute; top: -30px; left: 0; width: 300px;">Navigation mit<br/><span class="key">Esc</span>, <span class="key">→</span> und <span class="key">↓</span></small>
+                    <img src="images/logo.png"  style="width: 80%" />         
+                </section>
+                
+                <section>
+                    <section data-markdown>
+                        ![tools](images/johannes.png)
+                     
+                        ### [JohannesHoppe.de](http://JohannesHoppe.de)
+                    </section>
+                </section>
+            
+                <section>
+
+                    <section>
+                        <img src="images/img_mobile_hybrid_native2.png" style="width: 100%" />
+                    </section> 
+
+                    <section data-markdown>
+                        ![Phonegap](images/img_web-view.png)
+                    </section>
+
+                    <section data-markdown>
+                       <img src="images/img_layer.png" style="width: 55%" />
+                    </section>
+
+                </section>
+            
+                <section>                    
+
+                    <section data-markdown>
+                        ![Cordova](images/logo_cordova.png)
+                    </section>  
+                    
+                    <section data-markdown>
+                        <img src="images/logo_cordova-mini.png" style="width: 20%" />                   
+                        
+                        * <h4>Distributionen</h4>   
+                        * [Apache Cordova](http://cordova.apache.org/)
+                        * [Adobe PhoneGap](http://phonegap.com/)
+                        * [Telerik AppBuilder](http://www.telerik.com/appbuilder) <i class="icon ion-heart fragment" style="color: darkred"></i> <i class="icon ion-social-usd fragment" style="color: black"></i>
+                        * [Visual Studio Tools for Apache Cordova](http://www.visualstudio.com/en-us/explore/cordova-vs.aspx)
+                        * uvm...
+                    </section>
+
+                    <section data-markdown>
+                        [![Logo App Builder](images/logo_app-builder.png)](http://www.telerik.com/appbuilder)
+                        [![Screenshot App Builder](images/screen_appbuilder.jpg)](http://www.telerik.com/appbuilder)
+                    </section>
+
+                </section>
+            
+                <section>
+
+                    <section data-markdown>
+                        ![Logo AngularJS](images/logo_angularjs.svg)
+                    </section>  
+                    
+                    <section data-markdown>
+                        <img src="images/logo_angularjs-mini.svg" style="width: 20%" />                   
+                        
+                        MVC, MVVM, Directives, IoC
+                    </section>
+
+                    <section data-markdown>
+                        ## Hello World
+
+                        ```html contenteditable data-show-source="examples/HelloWorldAngular.html" fragment
+                        loading source...
+                        ```
+
+                        ```js contenteditable data-show-source="examples/HelloWorldAngular.js"  fragment
+                        loading source...
+                        ```
+
+                        <small>[plnkr.co/Z0YXdw](http://plnkr.co/Z0YXdw) / [Fallback](http://johanneshoppe.github.io/IonicPresentation/Demos/HelloWorldAngular/HelloWorldAngular/index.html)</small>
+                    </section>  
+
+                </section> 
+                
+                <section>
+
+                    <section data-markdown>
+                        ![Logo Ionic](images/logo_ionic.svg)
+                    </section> 
+
+                    <section data-markdown>
+                        ![Image Ionic](images/img_ionic_phones.png)
+                    </section> 
+                    
+                    <section data-markdown>
+                        [![Logo Ionic Creator](images/logo_ionic-creator.png)](https://creator.ionic.io/)
+                        [![Screenshot Ionic Creator](images/screen_creator-preview.png)](https://creator.ionic.io/)
+                    </section>   
+                                     
+                    <section data-markdown>
+                        ### Herunterladen / Einrichten
+                        <br/>
+
+                        ```html contenteditable 
+                        $ npm install -g cordova ionic 
+                        $ ionic start [appName] creator:573c5b5d1c22      
+                        $ cd [appName]
+                        
+                        Optional
+                        $ npm install gulp -g
+                        $ ionic setup sass            # auf Sass updaten 
+                        ```
+                    </section>
+                    
+                    <section data-markdown>
+                        ### Corodova: Ionic Distibution
+                        <i class="icon ion-sad fragment" style="font-size: 2em"></i>
+                         
+                        ```html
+                        $ cd [appName]
+                        $ ionic serve                 # im Browser entwickeln! :-)
+                        
+                        $ ionic platform add android  # Java SDK, Apache Ant, Android SDK...  :-/
+                        $ ionic build android
+                        $ ionic emulate android   
+                        
+                        $ ionic platform add ios      # OS X? Nope! :-(
+                        ```
+                    </section>  
+                    
+                    <section data-markdown>
+                        ### Corodova: App Builder CLI
+                        <i class="icon ion-happy fragment" style="font-size: 2em"></i>
+                         
+                        ```html
+                        $ npm install -g appbuilder  
+                        $ appbuilder create hybrid [appName2] --template=Blank
+                        $ cd [appName2]  
+                        $ appbuilder simulate
+                        ```
+                        
+
+                        <small>[mehr Infos](http://developer.telerik.com/featured/supercharge-app-development-ionic-appbuilder/)</small>
+                    </section>
+                    
+
+                </section>
+
+                <section>
+                    
+                    <section data-markdown>
+                        ## Downloads
+                        
+                        ![tools](images/icon_file.png)
+
+                        #### [github.com/JohannesHoppe](https://github.com/JohannesHoppe/HybridApps)
+                    </section> 
+                   
+                </section>
+
+                <section data-markdown>
+                    # Danke!
+                    
+                    <br/>
+                    ### [haushoppe-its.de](http://haushoppe-its.de)
+                </section> 
+            </div>
+
+        </div>
+        
+        <div class="pesentation-details">
+            <p>
+                Created by <a href="http://haushoppe-its.de" target="_blank">Johannes Hoppe</a>
+                <span >| <a href="?print-pdf" tooltip="activates PDF print stylesheet" target="_blank">Print PDF</a></span>
+            </p>
+        </div>
+
+
+        <script src="js/require.js"></script> 
+        <script src="js/require.config.js"></script> 
+           
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script> 
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                //minScale: 0.2,
+                //maxScale: 1.0,
+                controls: true,
+                progress: true,
+                history: true,
+                keyboard: true,
+                overview: true,
+                center: true,
+                rollingLinks: false,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } },
+                    { src: 'plugin/showSource/showSource.js' }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+    </body>
+</html>

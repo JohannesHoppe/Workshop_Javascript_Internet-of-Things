@@ -1,0 +1,210 @@
+﻿/* styles that are specific for this presentation */
+/* ReSharper disable UnknownHtmlTag */
+
+$neutralColor: #a6a6a6;
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* 'Created' by area */
+.pesentation-details {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: gray;
+    font-size: 0.8em;
+
+    a {
+        color: #51483D;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #8B7C69;
+    }
+}
+
+.key {
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    line-height: 30px;
+    min-width: 30px;
+    color: #000;
+    padding: 3px !important;
+    text-shadow: none;
+    letter-spacing: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: #000000 0 2px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+    vertical-align: sub !important;
+    margin: 0 7px !important;
+}
+
+blockquote {
+    margin-top: 40px !important;
+    box-shadow: none;
+}
+
+ol {
+    margin: 40px 0 0 130px !important;
+}
+
+small.mini {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+small.miniR {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+ul.model {
+    margin-top: 30px;
+
+    li {
+        margin-bottom: 30px;
+        color: #494D4D
+    }
+
+     span {
+        padding: 5px !important;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: #000000 0 2px 5px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+    
+        margin: 7px;
+        background-color: darken($neutralColor, 20%);
+        color: white;
+        width: 300px;
+    }
+}
+
+/*
+.reveal .state-background {
+    background-image: url('../../images/pixel.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 454px 454px;
+}
+*/
+
+
+
+
+code.small {
+    font-size: 14px;
+    line-height: 16px;
+    max-height: 500px;
+}
+
+iframe.spec {
+    
+    height: 300px;
+    width: 600px;
+    border: 1px solid silver;
+    box-shadow: #000000 0 2px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+}
+
+.showPrint {
+    display: none !important;
+}
+
+/* iphone-example (div) */
+.iphone {
+    background: url(../../images/iphone-screen.gif), url(../../images/iphone-hand.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 122px 99px, 0 0;
+    width: 704px;
+    height: 889px;
+    margin-left: 200px !important;
+}
+
+/* ipad slide (div) */
+.ipad {
+    background: url(../../images/ipad-hand.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 858px;
+    height: 724px;
+    margin-left: 200px !important;
+}
+
+/* fix font aweseome */
+.fa {
+    display: inline-block !important;
+    font-family: FontAwesome !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    font-style: normal !important;
+
+    color: $headingColor;
+}
+
+/* fix font aweseome */
+.fa-2x {
+  font-size: 2em !important;
+}
+.fa-3x {
+  font-size: 3em !important;
+}
+.fa-4x {
+  font-size: 4em !important;
+}
+.fa-5x {
+  font-size: 5em !important;
+}
+
+/* boxes */
+.box {
+    background-color: $neutralColor !important;
+    color: white !important;
+    padding: 20px !important;
+    margin: 20px !important;
+
+    .box {
+        background-color: darken($neutralColor, 20%) !important;
+
+        .box {
+            background-color: darken($neutralColor, 40%) !important;
+        }
+    }
+}
+
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+
+.box .one_half {
+    width: 40%  
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+} 
+
+/* IE-Patch für IE 7*/
+*:first-child+html .clearfix { min-height: 0; }
+
+/* IE-Patch für IE 6*/
+* html .clearfix { height: 1%; }
+
+/* ReSharper restore UnknownHtmlTag */
