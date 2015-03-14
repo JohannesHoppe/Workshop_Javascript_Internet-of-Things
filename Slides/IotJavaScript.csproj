@@ -41,6 +41,8 @@
   <ItemGroup>
     <Content Include="examples\HelloWorldAngular.js" />
     <Content Include="examples\HelloWorldAngular.html" />
+    <Content Include="images\board_arduino_uno.svg" />
+    <Content Include="images\board_galileo_gen2.svg" />
     <Content Include="images\galileo_blinking_bb.svg" />
     <Content Include="images\img_demo_horizontal.png" />
     <Content Include="images\img_demo_vertical.png" />
@@ -61,6 +63,7 @@
     <Content Include="images\logo_ionic.svg" />
     <Content Include="images\phonegap-you-keep-using-that-word.jpg" />
     <Content Include="images\phonegap_API.png" />
+    <Content Include="images\resource-arduino.png" />
     <Content Include="images\screen_appbuilder.jpg" />
     <Content Include="images\screen_creator-preview.png" />
     <Content Include="images\img_web-view.png" />
