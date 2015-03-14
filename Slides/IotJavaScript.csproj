@@ -43,12 +43,15 @@
     <Content Include="examples\HelloWorldAngular.html" />
     <Content Include="images\board_arduino_uno.svg" />
     <Content Include="images\board_galileo_gen2.svg" />
+    <Content Include="images\breadboard_blinky.png" />
     <Content Include="images\galileo_blinking_bb.svg" />
+    <Content Include="images\galileo_components.png" />
     <Content Include="images\img_demo_horizontal.png" />
     <Content Include="images\img_demo_vertical.png" />
     <Content Include="images\img_ionic_phones.png" />
     <Content Include="images\logo_angularjs-mini.svg" />
     <Content Include="images\logo_app-builder.png" />
+    <Content Include="images\logo_arduino.svg" />
     <Content Include="images\logo_cordova-mini.png" />
     <Content Include="images\logo_cordova.png" />
     <Content Include="images\img_mobile_hybrid_native.png" />
@@ -59,8 +62,11 @@
     <Content Include="images\iphone-screen.gif" />
     <Content Include="images\img_layer.png" />
     <Content Include="images\logo_angularjs.svg" />
+    <Content Include="images\logo_intel-galileo.png" />
     <Content Include="images\logo_ionic-creator.png" />
     <Content Include="images\logo_ionic.svg" />
+    <Content Include="images\logo_node.js.svg" />
+    <Content Include="images\logo_nodejs_hex.png" />
     <Content Include="images\phonegap-you-keep-using-that-word.jpg" />
     <Content Include="images\phonegap_API.png" />
     <Content Include="images\resource-arduino.png" />
