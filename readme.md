@@ -4,7 +4,6 @@
 
 <p align="center"><img src="images/resource-javascript.png" height="55"><img src="images/resource-arduino.png" height="55"><img src="images/resource-nodejs.png" height="55"><img src="images/resource-angularjs.png" height="55"><img src="images/resource-ionic.png" height="55"><img src="images/resource-cordova.png" height="55"></p>
 
-
 Jetzt Termin reservieren.  
 Die nächste Spartakiade findet am 21.–22. März 2015 in Berlin statt.
 
@@ -13,6 +12,8 @@ Twitter: http://twitter.com/spartakiade_org
 Google+: https://plus.google.com/u/0/+Dotnet-Leipzig-DE  
 
 # Workshop: IoT mit JavaScript<br>von Johannes Hoppe
+
+<p align="center"><img src="images/galileo_blinking_bb.svg" width="50%"></p>
 
 Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit Node.js und AngularJS.
 

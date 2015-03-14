@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HybridAppsSlides</RootNamespace>
-    <AssemblyName>HybridAppsSlides</AssemblyName>
+    <RootNamespace>IotJavaScript</RootNamespace>
+    <AssemblyName>IotJavaScript</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -41,6 +41,7 @@
   <ItemGroup>
     <Content Include="examples\HelloWorldAngular.js" />
     <Content Include="examples\HelloWorldAngular.html" />
+    <Content Include="images\galileo_blinking_bb.svg" />
     <Content Include="images\img_demo_horizontal.png" />
     <Content Include="images\img_demo_vertical.png" />
     <Content Include="images\img_ionic_phones.png" />
