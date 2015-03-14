@@ -73,13 +73,7 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 
 Ein paar Anleitungen, damit der Einstieg leichter fällt:  
 &raquo; [Getting Started (onboad LED Blink)](getting_started.md)
-
-&raquo; [Mini-Präsentationen](Slides/index.html) zu:
-* Arduino / Galileo
-* Node.js
-* AngularJS
-* Ionic Framework
-<iframe src="Slides/index.html" width="800" height="600"></ifrma> 
+&raquo; [Mini-Präsentationen](Slides/index.html) zu Arduino / Galileo, Node.js, AngularJS und Ionic Framework  
 
 
 <a name="checkliste"></a>
