@@ -13,7 +13,7 @@ Google+: https://plus.google.com/u/0/+Dotnet-Leipzig-DE
 
 # Workshop: IoT mit JavaScript<br>von Johannes Hoppe
 
-<p align="center"><img src="images/galileo_blinking_bb.svg" width="50%"></p>
+<p align="center"><img src="images/galileo_blinking_bb.png" width="50%"></p>
 
 Ein Galileo Board (Arduino), das Grove Starter Kit und ganz viel JavaScript mit Node.js und AngularJS.
 
