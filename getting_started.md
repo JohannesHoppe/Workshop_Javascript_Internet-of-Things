@@ -118,3 +118,5 @@ function periodicActivity()
 A big part of this text was ~~stolen~~ copied from here:
 * https://software.intel.com/en-us/html5/documentation/getting-started-with-intel-xdk-iot-edition
 * https://software.intel.com/en-us/articles/getting-started-with-intel-xdk-iot-edition-on-intel-iot-platforms
+
+<a href="readme.md" style="display: block; width: 115px; background: #4183c4; padding: 10px; text-align: center; border-radius: 5px; color: white; font-weight: bold; margin-top:40px;">« zurück</a>

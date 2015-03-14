@@ -12,3 +12,5 @@ Während des Workshops kommt das Intel® Galileo Gen 2 Board zum Einsatz. Es ist
 * Produktinformation: [Intel® Galileo Gen 2 Development Board](http://www.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html)
 * Deutscher Online-Shop: [bei Conrad kaufen](http://www.conrad.de/ce/de/product/1234343/Intel-Galileo-Gen-2-256-MB)
 * Deutscher Online-Shop: [bei EXP Tech kaufen](http://www.exp-tech.de/intel-galileo-gen2) (Achtung: häufig ausverkauft!)
+
+<a href="readme.md" style="display: block; width: 115px; background: #4183c4; padding: 10px; text-align: center; border-radius: 5px; color: white; font-weight: bold; margin-top:40px;">« zurück</a>

@@ -36,3 +36,5 @@ Während des Workshops kommt das "Seeed Studio Grove starter kit plus - Intel Io
 * Produktinformation: [Intel® IoT Developer Kit](https://software.intel.com/en-us/iot/devkit)
 * Produktinformation & Online-Shop direkt von Seeed: [Grove starter kit plus – Intel IoT Edition for Intel Galileo Gen 2](http://www.seeedstudio.com/depot/Grove-starter-kit-plus-Intel-IoT-Edition-for-Intel-Galileo-Gen-2-p-1978.html) (15% Coupon Code: 0a2e457cf9)
 * Deutscher Online-Shop: [bei EXP Tech kaufen](http://www.exp-tech.de/seeed-studio-grove-starter-kit-plus-intel-iot-edition-for-intel-galileo-gen-2) (Achtung: häufig ausverkauft!)
+
+<a href="readme.md" style="display: block; width: 115px; background: #4183c4; padding: 10px; text-align: center; border-radius: 5px; color: white; font-weight: bold; margin-top:40px;">« zurück</a>
