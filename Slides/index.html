@@ -120,7 +120,26 @@
                         <small>[http://www.leds.de/Widerstandsrechner/](Widerstand) nicht vergessen!</small>
                         
                         <img src="images/breadboard_blinky.png" alt="Breadboard - Steckboard/Experimentierboard" title="Breadboard - Steckboard/Experimentierboard" />
-                    </section>                     
+                    </section> 
+                    
+                    <section data-markdown>
+                        <img src="images/blinking_led.gif" alt="" />
+
+                        ```c contenteditable fragment
+                        int led = 13;
+
+                        void setup() {
+                          pinMode(led, OUTPUT);
+                        }    
+
+                        void loop() {
+                          digitalWrite(led, HIGH);
+                          delay(1000);
+                          digitalWrite(led, LOW);
+                          delay(1000);
+                        }
+                        ```
+                    </section>                                         
 
                 </section>
   
