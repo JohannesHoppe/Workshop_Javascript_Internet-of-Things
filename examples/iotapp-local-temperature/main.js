@@ -43,6 +43,8 @@ setInterval(function () {
     var temp = temperature.getCelsius();
 
     io.sockets.emit("message", temp);
-    lcd.write("Temp " + temp + " C");
-
+    
+    lcd.clear();
+    lcd.write("Temp: " + temp.toFixed(2) + " C");
+    
 }, 1000);

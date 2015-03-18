@@ -16,16 +16,12 @@ var mraa = require("mraa"),
 
 var Lcd = function() {
     
-    this._myLCD = new LCD.Jhd1313m1(0, 0x3E, 0x62);  // connect the LCD to any I2C socket
-    this._myLCD.setColor(255, 0, 0); // hardcoded red
-    this._myLCD.write("Spartakiade!");
+    var myLcd = new LCD.Jhd1313m1(0, 0x3E, 0x62);  // connect the LCD to any I2C socket
+    myLcd.setColor(255, 0, 0); // hardcoded red
+    myLcd.write("Spartakiade!");
+    return myLcd;
 };
 
-// write text to lcd
-Lcd.prototype.write = function(text) {
-    
-    this._myLCD.clear();
-    this._myLCD.write(text);
-};
+Lcd.prototype = LCD.Jhd1313m1.prototype;
 
 module.exports = Lcd;
