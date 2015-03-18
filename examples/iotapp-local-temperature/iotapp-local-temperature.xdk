@@ -1,6 +1,6 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "Internet of Things Creator",
       "projectTypeName": "com.intel.xdk.projecttype.iotapp",

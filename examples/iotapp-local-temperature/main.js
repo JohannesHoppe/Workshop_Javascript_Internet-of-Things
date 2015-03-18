@@ -5,17 +5,15 @@
  *  Reads Temperature Sensor periodically, starts a web server and communicate wirelessly using WebSockets.
  */
 
-var temperature = require('./temperature'),
+var Temperature = require('./Temperature'),
+    Lcd = require('./Lcd'),
     http = require('http'),
     io = require('socket.io')(app);
 
-// sends temperature in celsius every 4 seconds
-function startSensorWatch(socket) {
-  
-    setInterval(function () {
-       socket.emit("message", temperature.getCelsius());
-    }, 4000);
-}
+// config
+var temperatureAnologPin = 0;
+var temperature = new Temperature(temperatureAnologPin);
+var lcd = new Lcd();
 
 console.log("Sample Reading Grove Kit Temperature Sensor");
 
@@ -31,13 +29,20 @@ var app = http.createServer(function (req, res) {
 // socket.io server
 io.on('connection', function (socket) {
 
-    console.log('a user connected');
+    console.log('user connected');
     socket.emit('connected', 'Welcome');
-
-    startSensorWatch(socket);
 
     socket.on('disconnect', function () {
         console.log('user disconnected');
     });
 });
 
+// checks temperature in celsius every second
+setInterval(function () {
+
+    var temp = temperature.getCelsius();
+
+    io.sockets.emit("message", temp);
+    lcd.write("Temp " + temp + " C");
+
+}, 1000);
