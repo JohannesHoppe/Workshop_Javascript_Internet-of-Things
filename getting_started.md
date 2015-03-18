@@ -48,7 +48,9 @@ The full setup should look like this:
 
 As soon as you know the boards IP address, you can connect to the board over SSH.
 
-The easiest way to discover the IP address is to use the Apple Bonjour. The software preinstalled on many machines and also comes with iTunes. If you do not have Bonjour, then you might want to download it from [http://support.apple.com/kb/DL999.](http://support.apple.com/kb/DL999.)
+![GalileoPrepConnections.png](images/bonjour_missing.png)
+
+The easiest way to discover the IP address is to use the Apple Bonjour. The software is preinstalled on many machines and also comes with iTunes. If you do not have Bonjour, then you might want to download it from [http://support.apple.com/kb/DL999.](http://support.apple.com/kb/DL999.)
 
 ##  Onboard LED Blink template
 
