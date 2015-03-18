@@ -28,6 +28,12 @@ Temperature.prototype.getCelsius = function() {
     var a = this._myAnalogPin.read();
     console.log("Analog Pin Output: ", a);
 
+    //Shifting bits to get value between 0 to 1023 (10 bits)		
+    if (a > 1024) {		
+        a = a >> 2; //Shift 'a' right two bits		
+    }
+    
+    
     var resistance = (1023 - a) * 10000 / a; // get the resistance of the sensor
     var celsius_temperature = 1 / (Math.log(resistance / 10000) / b + 1 / 298.15) - 273.15; // convert to temperature via datasheet   
     
