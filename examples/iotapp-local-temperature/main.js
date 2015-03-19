@@ -45,6 +45,6 @@ setInterval(function () {
     io.sockets.emit("message", temp);
     
     lcd.clear();
-    lcd.write("Temp: " + temp.toFixed(2) + " C");
+    lcd.write("Temp: " + temp.toFixed(2) + "C");
     
 }, 1000);

@@ -7,6 +7,8 @@
  *
  * see: http://iotdk.intel.com/docs/master/upm/classupm_1_1_jhd1313m1.html
  * see: http://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight
+ *
+ * see https://github.com/intel-iot-devkit/upm/blob/master/src/lcd/jhd1313m1.h for all available methods of Jhd1313m1
  */
 
 /*jslint node:true */
