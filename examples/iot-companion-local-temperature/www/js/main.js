@@ -21,9 +21,6 @@ var isPurged = 0;
 
 var chart_purge_time = 0;
 
-//Set the height of the gauge
-document.getElementById("gauge").setAttribute("style", "height:" + 0.20 * window.innerHeight + "px");
-
 //Create a JSON style object for the margin
 var margin = {
     top: 10,
@@ -40,8 +37,7 @@ var chart_svg = d3.select("#chart").append("svg").attr("id", "container1").attr(
 chart_svg.attr("transform", "translate(25," + margin.top + ")");
 
 var x1 = d3.scale.linear().domain([0, 5000]).range([0, 100000]);
-
-var y1 = d3.scale.linear().domain([0, 200]).range([0.5 * height, 0]);
+var y1 = d3.scale.linear().domain([0, 40]).range([0.5 * height, 0]);
 
 //Add X Axis grid lines
 chart_svg.selectAll("line.y1")
@@ -88,6 +84,7 @@ function plot() {
     //Empty heart rate data array
     chart_data = [];
     chart_counter++;
+    
     //Draw Line Graph && Draw circles
     chart_svg.selectAll("circle").data(splot_dataset).enter().append("svg").attr("id", "chart_graph").append("circle")
         .attr("cx", function (d, i) {
@@ -104,6 +101,7 @@ function plot() {
                 return "white";
             }
         }).attr("stroke", "black").attr("stroke-width", 1);
+    
     //Handle purging data
     if ((chart_purge_time === chart_counter) || (chart_counter > chart_purge_time)) {
         purgeData();
@@ -123,6 +121,7 @@ function validateIP() {
         script = document.createElement("script");
 
     //create script tag for socket.io.js file located on your IoT platform (development board)
+    debugger;
     script.setAttribute("src", "http://" + ip_addr + ":" + port + "/socket.io/socket.io.js");
     document.head.appendChild(script);
     
@@ -134,13 +133,16 @@ function validateIP() {
 
             //Attach a 'connected' event handler to the socket
             socket.on("connected", function (message) {
+                
                 //Apache Cordova Notification
+                /*
                 navigator.notification.alert(
                     "Great Job!",  // message
                     "",                     // callback
                     'You are Connected!',            // title
                     'Ok'                  // buttonName
                 );
+                */
 
                 //Set all Back button to not show
                 $.ui.showBackButton = false;
@@ -151,16 +153,10 @@ function validateIP() {
             socket.on("message", function (message) {
                 chart_data.push(message);
                 plot();
-                //Update log
                 $("#feedback_log").text("Last Updated at " + Date().substr(0, 21));
             });
         } catch (e) {
-            navigator.notification.alert(
-                "Server Not Available!",  // message
-                "",                     // callback
-                'Connection Error!',            // title
-                'Ok'                  // buttonName
-            );
+            navigator.notification.alert("Server Not Available!", "", 'Connection Error!', 'Ok');
         }
     }, 1000);
 
