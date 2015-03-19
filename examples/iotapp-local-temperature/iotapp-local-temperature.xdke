@@ -3,6 +3,7 @@
     "projectSettingsVersion": "1.2",
     "projectFiles": {},
     "projectDirectories": {},
-    "initialAutoPluginCount": 0
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android"
   }
 }
