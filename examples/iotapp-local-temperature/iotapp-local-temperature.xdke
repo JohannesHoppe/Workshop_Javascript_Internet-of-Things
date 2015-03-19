@@ -1,7 +1,8 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "projectFiles": {},
-    "projectDirectories": {}
+    "projectDirectories": {},
+    "initialAutoPluginCount": 0
   }
 }
