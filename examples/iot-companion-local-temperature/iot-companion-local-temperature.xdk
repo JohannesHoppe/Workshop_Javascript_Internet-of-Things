@@ -1,60 +1,44 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
-      "type": "Demo",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-iot-companion-local-temperature/sample.zip",
-      "projectGuid": "0952d892-11c6-4300-85a5-e6ef0d5dd4fc",
-      "lastModifiedDate": 1426697803098,
-      "creationDate": 1426697803060
+      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2015-ww07/sample-iot-companion-local-temperature/sample.zip",
+      "projectGuid": "8bd6cf1e-5145-4e66-b252-f5792b10a849",
+      "lastModifiedDate": 1426798647768,
+      "creationDate": 1426798647723
     },
     "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
+    "libraries": [],
     "cordovaPlugins": [
       {
         "id": "org.apache.cordova.vibration",
-        "version": "0.3.8",
+        "version": "0.3.12",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.dialogs",
-        "version": "0.2.6",
+        "version": "0.2.11",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.0",
+        "version": "0.3.5",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.device",
-        "version": "0.2.9",
+        "version": "0.2.13",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
@@ -73,17 +57,23 @@
         },
         "isActive_": true,
         "appName_": "iot-companion-local-temperature",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appID_": "demo.localtemperature",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "1.0.0",
-        "appVersionCode_": "1"
+        "appVersionCode_": "1",
+        "appDescription_": "A simple app that visualizes data received wirelessly from the Local Temperature node.js/IoT project when running on a IoT platform such as a development board with a Temperature Sensor connected.",
+        "appAuthor_": "Intel XDK"
       },
       "Android-Crosswalk": {
         "platform_": "android",
@@ -96,38 +86,50 @@
         },
         "isActive_": true,
         "appName_": "iot-companion-local-temperature",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appID_": "demo.localtemperature",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "1.0.0",
-        "appVersionCode_": "1"
+        "appVersionCode_": "1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "A simple app that visualizes data received wirelessly from the Local Temperature node.js/IoT project when running on a IoT platform such as a development board with a Temperature Sensor connected."
       },
       "iOS": {
         "platform_": "ios",
         "runtime_": "Cordova 3.x",
         "name_": "iOS",
         "preferences_": {
-          "ios-target": "5",
+          "ios-target": "6",
           "ios-configuration": "adhoc"
         },
         "isActive_": true,
         "appName_": "iot-companion-local-temperature",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appID_": "demo.localtemperature",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
-        "appVersion_": "1.0.0"
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
+        "appVersion_": "1.0.0",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "A simple app that visualizes data received wirelessly from the Local Temperature node.js/IoT project when running on a IoT platform such as a development board with a Temperature Sensor connected."
       },
       "Windows8": {
         "platform_": "windows8",
@@ -136,34 +138,22 @@
         "preferences_": {},
         "isActive_": true,
         "appName_": "iot-companion-local-temperature",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appID_": "demo.localtemperature",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
-        "appVersion_": "1.0.0.0"
-      },
-      "WindowsPhone8": {
-        "platform_": "wp8",
-        "runtime_": "Cordova 3.x",
-        "name_": "WindowsPhone8",
-        "preferences_": {},
-        "isActive_": true,
-        "appName_": "iot-companion-local-temperature",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
-        "icons_": [],
-        "splashes_": [],
         "iosProvs_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
-        "appVersion_": "1.0.0.0"
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
+        "appVersion_": "1.0.0.0",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "A simple app that visualizes data received wirelessly from the Local Temperature node.js/IoT project when running on a IoT platform such as a development board with a Temperature Sensor connected."
       }
     },
     "gameAssetDirectory": "asset",
