@@ -75,7 +75,8 @@ Jeder Teilnehmer sollte bereits das "Intel XDK IoT Edition" installiert haben. E
 Ein paar Anleitungen, damit der Einstieg leichter fällt:  
 &raquo; [Getting Started (onboad LED Blink)](getting_started.md)  
 &raquo; [Grove sample codes](grove_sample_codes.md)
-&raquo; [Mini-Präsentationen](http://johanneshoppe.github.io/Workshop_Javascript_Internet-of-Things/Slides/) zu Arduino / Galileo, Node.js, AngularJS und Ionic Framework  
+&raquo; [Vorbereitete Beispiele](./examples/)    
+&raquo; [**Mini-Präsentationen**](http://johanneshoppe.github.io/Workshop_Javascript_Internet-of-Things/Slides/) zu Arduino / Galileo, Node.js, AngularJS und Ionic Framework  
 
 
 <a name="checkliste"></a>

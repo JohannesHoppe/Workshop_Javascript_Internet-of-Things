@@ -15,7 +15,7 @@ var temperatureAnologPin = 0;
 var temperature = new Temperature(temperatureAnologPin);
 var lcd = new Lcd();
 
-console.log("Sample Reading Grove Kit Temperature Sensor");
+console.log("Improved Sample Reading Grove Kit Temperature Sensor");
 
 // normal HTTP server
 var app = http.createServer(function (req, res) {
