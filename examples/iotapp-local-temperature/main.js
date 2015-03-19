@@ -5,26 +5,27 @@
  *  Reads Temperature Sensor periodically, starts a web server and communicate wirelessly using WebSockets.
  */
 
-var Temperature = require('./Temperature'),
-    Lcd = require('./Lcd'),
-    http = require('http'),
-    io = require('socket.io')(app);
+console.log("Improved Sample Reading Grove Kit Temperature Sensor");
+
+var http = require('http'),
+    socket_io = require('socket.io'),
+    ip = require("ip"),
+    Temperature = require('./Temperature'),
+    HttpHandler = require('./HttpHandler'),
+    Lcd = require('./Lcd');
 
 // config
 var temperatureAnologPin = 0;
 var temperature = new Temperature(temperatureAnologPin);
 var lcd = new Lcd();
 
-console.log("Improved Sample Reading Grove Kit Temperature Sensor");
+// create HTTP server and websocket server
+var httpHandler = new HttpHandler(__dirname + '/index.html'),
+    app = http.createServer(httpHandler.getHandler()),
+    io = socket_io(app),
+    ipAddress = ip.address();
 
-// normal HTTP server
-var app = http.createServer(function (req, res) {
-    
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('<h1>Hello world from Intel IoT platform!</h1>');
-    
-}).listen(1337);
-
+app.listen(1337);
 
 // socket.io server
 io.on('connection', function (socket) {
@@ -45,6 +46,8 @@ setInterval(function () {
     io.sockets.emit("message", temp);
     
     lcd.clear();
-    lcd.write("Temp: " + temp.toFixed(2) + "C");
+    lcd.write("Temp: " + temp.toFixed(2) + "^C");
+    lcd.setCursor(1,0);
+    lcd.write(ipAddress);
     
 }, 1000);

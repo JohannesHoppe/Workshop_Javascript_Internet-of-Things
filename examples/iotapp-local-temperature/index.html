@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+    // TIP: io() with no args does auto-discovery
+    var socket = io();
+
+    socket.on('connected', function (data) {
+        console.log(data);
+    });
+
+    socket.on('message', function (data) {
+        document.getElementById('temp').innerText  = data.toFixed(2);
+    });
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello world from Intel IoT platform!</h1>
+    <b>Temperature: </b> <span id="temp">?</span> &deg;C
+</body>
+
+</html>        
+</html>
