@@ -82,9 +82,13 @@ ul.model {
         box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
     
         margin: 7px;
-        background-color: darken($neutralColor, 20%);
+        /* background-color: darken($neutralColor, 20%);  */
+        background-color: #0F7391;
         color: white;
         width: 300px;
+    }
+    span a {
+        color: white !important;
     }
 }
 

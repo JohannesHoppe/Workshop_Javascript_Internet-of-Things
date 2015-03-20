@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /**
  * A theme for reveal.js presentations with JS flavour
  */
@@ -45,8 +45,8 @@ body.x-body {
 }
 
 ::selection {
-  color: white;
-  background: #26351c;
+  color: #fff;
+  background: #26351C;
   text-shadow: none;
 }
 
@@ -257,7 +257,7 @@ ul.model {
 }
 ul.model li {
   margin-bottom: 30px;
-  color: #494d4d;
+  color: #494D4D;
 }
 ul.model span {
   padding: 5px !important;
@@ -266,9 +266,13 @@ ul.model span {
   box-shadow: #000000 0 2px 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
   margin: 7px;
-  background-color: #737373;
+  /* background-color: darken($neutralColor, 20%);  */
+  background-color: #0F7391;
   color: white;
   width: 300px;
+}
+ul.model span a {
+  color: white !important;
 }
 
 /*
@@ -380,14 +384,16 @@ iframe.spec {
   visibility: hidden;
 }
 
-/* IE-Patch fÅr IE 7*/
+/* IE-Patch f√ºr IE 7*/
 *:first-child + html .clearfix {
   min-height: 0;
 }
 
-/* IE-Patch fÅr IE 6*/
+/* IE-Patch f√ºr IE 6*/
 * html .clearfix {
   height: 1%;
 }
 
 /* ReSharper restore UnknownHtmlTag */
+
+/*# sourceMappingURL=neutral.css.map */
