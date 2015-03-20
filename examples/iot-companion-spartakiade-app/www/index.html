@@ -3,122 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
-
-    <style>
-      .angular-google-map-container {
-          width: 100%;
-          height: 504px;
-      }
-    </style>
+    <title>Spartakiade App</title>
 
     <link href="/css/preview-frame.css" rel="stylesheet">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-
-    <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-
-    <script>
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic'])
-
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if(window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
-})
-
-.config(function($stateProvider, $urlRouterProvider) {
-
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
-  $stateProvider
-    
-    .state('page2', {
-      url: '/temperature',
-      templateUrl: 'page2.html'
-    })
-    
-    .state('page3', {
-      url: '/connect',
-      templateUrl: 'page3.html'
-    })
-    ;
-
-  // if none of the above states are matched, use this as the fallback
-  
-  $urlRouterProvider.otherwise('/temperature');
-  
-
-});
-
-
-    </script>
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
-  <div>
     <div>
-        <ion-nav-bar class="bar-stable">
-            <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">Back</ion-nav-back-button>
-        </ion-nav-bar>
-        <ion-nav-view></ion-nav-view>
-    </div>
-</div>
-<script id="page2.html" type="text/ng-template">
-<ion-view title="Temperature">
-    <ion-content padding="true" scroll="false" class="has-header">
-        <h1>Spartiakiade App</h1>
         <div>
-            <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" <="" canvas="">
-            </canvas>
+            <ion-nav-bar class="bar-stable">
+                <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">Back</ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
         </div>
-        <div class="spacer" style="height: 100px;"></div>
-        <form>
-            <ion-toggle toggle-class="toggle-positive" name="activator">Activate</ion-toggle>
-        </form>
-        <a href="#/connect" class="button button-stable button-block">Change IP</a>
-    </ion-content>
-</ion-view></script>
-<script id="page3.html" type="text/ng-template">
-<ion-view title="Connect">
-    <ion-content padding="true" class="has-header">
-        <form>
-            <h1>Spartakiade App</h1>
-            <ion-list>
-                <label class="item item-input">
-                    <span class="input-label">IP</span>
-                    <input type="text" placeholder="">
-                </label>
-                <label class="item item-input">
-                    <span class="input-label">Port</span>
-                    <input type="password" placeholder="">
-                </label>
-            </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
-            <a href="#/temperature" class="button button-stable button-block">Log in</a>
-        </form>
-    </ion-content>
-</ion-view></script>
+    </div>
+        
   </body>
 </html>
