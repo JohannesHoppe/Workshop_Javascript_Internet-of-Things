@@ -28,15 +28,15 @@
                     <ion-list>
                         <label class="item item-input">
                             <span class="input-label">IP</span>
-                            <input type="text" placeholder="" ng-bind="model.ip">
+                            <input type="text" placeholder="" ng-model="model.ip">
                         </label>
                         <label class="item item-input">
                             <span class="input-label">Port</span>
-                            <input type="password" placeholder="" ng-bind="model.port">
+                            <input type="text" placeholder="" ng-model="model.port">
                         </label>
                     </ion-list>
                     <div class="spacer" style="height: 40px;"></div>
-                    <a class="button button-stable button-block" ng-click="connect">Connect!</a>
+                    <a class="button button-stable button-block" ng-click="connect()">Connect!</a>
                 </form>
             </ion-content>
         </ion-view>
