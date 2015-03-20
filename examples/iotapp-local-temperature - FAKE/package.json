@@ -1,0 +1,12 @@
+{
+  "name": "LocalTemperatureFake",
+  "description": "Emulates the local temperature script (for testing)",
+  "version": "0.0.0",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+      "socket.io": "^1.3.5"
+  }
+}
