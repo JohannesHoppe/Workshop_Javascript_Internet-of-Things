@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="exampleApp" >
+<head>
+    <title>NG Form Example</title>   
+    <link href="../style.css" rel="stylesheet" />
+</head>
+
+<!--START-->
+
+<body class="example" ng-controller="exampleController">
+
+    <form class="form_example">
+        <label for="title">Title</label>
+        <input id="title" ng-model="model.title">
+        
+        <label for="message">Message</label>
+        <input id="message" ng-model="model.message">
+    </form>
+         
+    <div class="sticky_note">
+        <div>
+            <h1>{{model.title}}</h1>
+            <p>{{model.message}}</p>
+        </div>
+    </div>
+
+    <script src="../../js/angular-1.3.0/angular.js"></script>
+    <script src="angular2.js"></script>
+
+</body>
+
+<!--STOP-->
+
+</html>

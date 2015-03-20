@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>NG Form Example</title>   
+    <link href="../style.css" rel="stylesheet" />
+</head>
+
+<!--START-->
+
+<body class="example" ng-app>
+
+    <form class="form_example"
+          ng-init="model = { title: 'Remember', 'message': 'the milk' }">
+        <label for="title">Title</label>
+        <input id="title" ng-model="model.title">
+        
+        <label for="message">Message</label>
+        <input id="message" ng-model="model.message">
+    </form>
+       
+    <h1 ng-show="!model.title.length">Keine Daten Da!</h1>
+       
+    <div class="sticky_note" ng-show="model.title.length">
+        <div>
+            <h1>{{model.title}}</h1>
+            <p>{{model.message}}</p>
+        </div>
+    </div>
+
+    <script src="../../js/angular-1.3.0/angular.js"></script>
+</body>
+
+<!--STOP-->
+
+</html>

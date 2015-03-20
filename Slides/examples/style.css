@@ -1,0 +1,87 @@
+﻿body.example {
+  color: #666666;
+  font-family: Verdana, Arial, Helvetica, Sans-serif;
+  font-size: 80%;
+  line-height: 1.5;
+}
+
+/* 
+ * shadow effect which only works in modern browsers 
+ */
+.sticky_note {
+    background-image: 
+        url(images/sticky_note/bottom_right.png),
+        url(images/sticky_note/top_right.png),
+        url(images/sticky_note/bottom_left.png),
+        url(images/sticky_note/top_left.png);
+
+    background-position: 
+        bottom right,
+        top right,
+        bottom left,
+        top left;
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+    width: 360px !important;
+    padding: 0 15px 15px 15px !important;
+    margin: 20px auto 10px auto !important;
+}
+
+.sticky_note div {
+    min-height: 100px;
+    background-color: #F0F0A6;
+    padding: 10px;
+}
+
+
+@font-face {
+    font-family: 'BuxtonSketch';
+    src: url('fonts/BuxtonSketch.eot');
+    src: local('fonts/BuxtonSketch'), url('fonts/BuxtonSketch.woff') format('woff'), url('fonts/BuxtonSketch.ttf') format('truetype');
+}
+
+.sticky_note,
+.form_example {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.sticky_note h1 {
+    margin: 0 0 4px 0;    
+    color: #5A5A5A;
+    font-family: 'BuxtonSketch' !important;
+    font-size: 26px !important;
+}
+
+.form_example {
+    width: 290px;
+}
+
+.form_example label {
+    display: block;
+    float: left;
+    width: 110px;
+}
+
+.form_example input {
+    display: block;
+    float: left;
+    width: 160px;
+}
+
+.reveal .form_example {
+    margin-top: 40px;
+    width: 370px;
+}
+
+.reveal .sticky_note,
+.reveal .form_example,
+.reveal .form_example input {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.reveal .sticky_note h1 {
+    font-size: 42px !important;
+}

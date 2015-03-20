@@ -148,24 +148,24 @@
                         
                         <img src="" alt="" style="float:right"/>
                         <ul class="model">
-                            <li class="fragmentx">
+                            <li class="fragment">
                                 <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/PinMode">pinMode()</a> &nbsp; &nbsp;&nbsp;</span>
                                 <small>Configures the specified pin to behave either as an input or an output.</small>
                             </li> 
-                            <li class="fragmentx">
+                            <li class="fragment">
                                 <span><a href="http://arduino.cc/en/Reference/DigitalRead">digitalRead()</a>&nbsp;</span>
                                 <small>Reads the value from a specified digital pin, either HIGH or LOW.</small>
                             </li>
-                            <li class="fragmentx">
+                            <li class="fragment">
                                 <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/DigitalWrite">digitalWrite()</a>&nbsp;</span>
                                 <small>Write a HIGH (3.3/5 volts) or a LOW (0 volt, ground) value to a digital pin.</small>
                             </li> 
 
-                            <li class="fragmentx">
+                            <li class="fragment">
                                 <span><a href="http://arduino.cc/en/Reference/AnalogRead">analogRead()</a></span>
                                 <small>Reads the value from the specified <b>analog</b> input pin.</small>
                             </li>
-                            <li class="fragmentx">
+                            <li class="fragment">
                                 <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/AnalogWrite">analogWrite()</a></span>
                                 <small>Writes an 'analog' value (<a href="http://arduino.cc/en/Tutorial/PWM">PWM wave</a>) to a <b>digital</b> pin (marked with ~).</small>
                             </li>  
@@ -297,7 +297,7 @@
                         * [Adobe PhoneGap](http://phonegap.com/)
                         * [Telerik AppBuilder](http://www.telerik.com/appbuilder)
                         * [Visual Studio Tools for Apache Cordova](http://www.visualstudio.com/en-us/explore/cordova-vs.aspx)
-                        * [Intel XDK](https://software.intel.com/de-de/html5/tools)
+                        * **[Intel XDK](https://software.intel.com/de-de/html5/tools)**
                         * uvm...
                     </section>
 
@@ -316,18 +316,67 @@
                     </section>
 
                     <section data-markdown>
-                        ## Hello World
+                        ## UI-Router
 
-                        ```html contenteditable data-show-source="examples/HelloWorldAngular.html" fragment
+                        ```html contenteditable data-show-source="examples/HelloWorldAngular.html"
                         loading source...
                         ```
 
-                        ```js contenteditable data-show-source="examples/HelloWorldAngular.js"  fragment
+                        ```js contenteditable data-show-source="examples/HelloWorldAngular.js"
                         loading source...
                         ```
 
                         <small>[plnkr.co/Z0YXdw](http://plnkr.co/Z0YXdw) / [Fallback](http://johanneshoppe.github.io/IonicPresentation/Demos/HelloWorldAngular/HelloWorldAngular/index.html)</small>
                     </section>  
+                                    
+                    <section data-markdown>
+                        ## Controller
+                                                
+                        ```js contenteditable data-show-source="examples/01_bindings/angular2.js"
+                        loading source...
+                        ```
+
+                        ```html contenteditable small data-show-source="examples/01_bindings/angular2.html"
+                        loading source...
+                        ``` 
+                        <small>[Demo](examples/01_bindings/angular2.html)</small>
+                    </section>  
+                    
+                    <section data-markdown>
+                        ## Directive
+                        
+                        ```html contenteditable data-show-source="examples/02_templating/angular.html"
+                        loading source...
+                        ```
+                        
+                        ```html contenteditable data-show-source="examples/02_templating/angular_short.js"
+                        loading source...
+                        ```
+                        <small>[Demo](examples/02_templating/angular.html)</small>
+                    </section> 
+                    
+                    <section data-markdown>
+                        ## Service / Factory
+                                                
+                        ```js contenteditable 
+                        angular.module('exampleApp', [])
+                                 
+                            // constructor
+                            .service('helloWorldService', function() {
+                                this.sayHello = function() {
+                                    return "Hello World!";
+                                };
+                            })
+
+                            .factory('helloWorldFactory', function() {
+                                return {
+                                    sayHello: function() {
+                                        return "Hello World!";
+                                    }
+                                };
+                            });
+                        ``` 
+                    </section>                 
 
                 </section> 
                 
@@ -344,6 +393,7 @@
                     <section data-markdown>
                         [![Logo Ionic Creator](images/logo_ionic-creator.png)](https://creator.ionic.io/)
                         [![Screenshot Ionic Creator](images/screen_creator-preview.png)](https://creator.ionic.io/)
+                        <small>[creator.ionic.io](https://creator.ionic.io/)</small>
                     </section>   
                                      
                     <section data-markdown>
@@ -376,10 +426,15 @@
                         $ ionic platform add ios      # OS X? Nope! :-(
                         ```
                     </section>  
-                    
+
+                    <section data-markdown>
+                        ### Corodova: Intel XDK
+                        <i class="icon ion-happy" style="font-size: 2em"></i>
+                    </section>
+                                         
                     <section data-markdown>
                         ### Corodova: App Builder CLI
-                        <i class="icon ion-happy fragment" style="font-size: 2em"></i>
+                        <i class="icon ion-happy" style="font-size: 2em"></i>
                          
                         ```html
                         $ npm install -g appbuilder  
@@ -391,8 +446,6 @@
 
                         <small>[mehr Infos](http://developer.telerik.com/featured/supercharge-app-development-ionic-appbuilder/)</small>
                     </section>
-                    
-
                 </section>
 
                 <section>

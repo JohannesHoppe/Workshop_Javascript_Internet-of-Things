@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'BuxtonSketch';
+	src: url('./BuxtonSketch.eot');
+	src: local('BuxtonSketch'), url('./BuxtonSketch.woff') format('woff'), url('./BuxtonSketch.ttf') format('truetype');
+}
+.example {
+	font-family: 'BuxtonSketch' !important;
+}
