@@ -1,0 +1,6 @@
+Start a new Ionic app using the ionic tool:
+
+$ npm install -g cordova ionic 
+$ ionic start [appName] creator:6e4bc968306c
+$ cd SpartakiadeApp
+$ ionic serve
