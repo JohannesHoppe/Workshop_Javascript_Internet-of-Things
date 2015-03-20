@@ -5,7 +5,7 @@ angular.module('app')
     .controller('connectController', function ($scope, $state, socketIo) {
 
         $scope.connection = {
-            ip: "0.0.0.0",
+            ip: "127.0.0.1",
             port: "1337"
         };
     

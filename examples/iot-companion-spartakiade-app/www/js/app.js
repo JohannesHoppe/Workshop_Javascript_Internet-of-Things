@@ -8,7 +8,8 @@ angular.module('app', ['ionic'])
 
         .state('temperature', {
             url: '/temperature',
-            templateUrl: 'pageTemperature.html'
+            templateUrl: 'pageTemperature.html',
+            controller: 'temperatureController'
         })
 
         .state('connect', {
