@@ -1,4 +1,4 @@
-/*global angular:false */
+/*global angular:false, console:false */
 
 angular.module('app', ['ionic'])
 
@@ -13,8 +13,26 @@ angular.module('app', ['ionic'])
 
         .state('connect', {
           url: '/connect',
-          templateUrl: 'pageConnect.html'
+          templateUrl: 'pageConnect.html',
+          controller: 'connectController'
         });
 
-      $urlRouterProvider.otherwise('/temperature');
+      $urlRouterProvider.otherwise('/connect');
+    })
+
+    .controller('connectController', function ($scope, $state) {
+
+        console.log($scope);
+
+        $scope.model = {
+            ip: "0.0.0.0",
+            port: "1337"
+        };
+    
+        $scope.connect = function() {
+            
+            $state.go('temperature');
+        };
+    
+        
     });
