@@ -29,15 +29,26 @@ io.on('connection', function (socket) {
 
 var randomIntFromInterval = function(min,max)
 {
-    return Math.floor(Math.random()*(max-min+1)+min);
+    return Math.random() * (max - min) + min;
 }
+
+var temp = 24;
+var tempIncrease = 0.3;
 
 // checks temperature in celsius every second
 setInterval(function () {
 
-    var temp = randomIntFromInterval(20, 25);
-    io.sockets.emit("message", temp);
+    temp = randomIntFromInterval(temp, temp + tempIncrease);
     
+    if (temp < 24) {
+        tempIncrease = 0.3;
+    }
+    
+    if (temp > 26) {
+        tempIncrease = -0.3;
+    }
+   
+    io.sockets.emit("message", temp);
     console.log("Fake temperature:", temp);
    
-}, 1000);
+}, 20 * 1000);

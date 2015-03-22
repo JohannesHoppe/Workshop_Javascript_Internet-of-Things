@@ -1,6 +1,6 @@
 /*global angular:false, io:false, console:false */
 
-angular.module('app', ['ionic'])
+angular.module('app', ['ionic', 'chart.js'])
 
     .config(function($stateProvider, $urlRouterProvider) {
 
@@ -19,16 +19,21 @@ angular.module('app', ['ionic'])
         });
 
         $urlRouterProvider.otherwise('/connect');
+    
+        Chart.defaults.global.colours = ['#c0392b'];
     })
 
     // simple wrapper around socket.io so that it can be shared between controllers
     .factory('socketIo', function () {
     
         var socket;
-            
+    
         return {        
             connect: function(connetion) {
-                return (socket = io.connect('http://' + connetion.ip + ':' + connetion.port));
+                if(socket) {
+                    socket.disconnect();
+                }
+                return (socket = io.connect('http://' + connetion.ip + ':' + connetion.port, {'forceNew':true }));
             },
             getSocket: function() {
                 return socket;

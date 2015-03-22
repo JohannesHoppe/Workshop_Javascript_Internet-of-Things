@@ -1,0 +1,14 @@
+.button-assertive {
+    background-color: #c0392b !important;
+}
+
+h1 {
+    margin-left: -15px;
+    margin-bottom: 50px;
+}
+
+h1 img {
+    width: 100px;
+    float: left;
+    margin-bottom: 10px;
+}

@@ -50,4 +50,4 @@ setInterval(function () {
     lcd.setCursor(1,0);
     lcd.write(ipAddress);
     
-}, 1000);
+}, 20 * 1000);
