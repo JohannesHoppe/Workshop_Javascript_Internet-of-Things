@@ -1,23 +1,17 @@
 Local Temperature Node.js IoT App
 ============================
-The Local Temperature Node.js sample application distributed within Intel® XDK IoT Edition under the IoT with Node.js Projects project creation option showcases how to read analog data from a Grover Starter Kit Plus – IoT Intel® Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets.
 
-Intel(R) XDK IoT Edition
--------------------------------------------
-This template is part of the Intel(R) XDK IoT Edition. 
-Download the Intel(R) XDK IoT Edition at https://software.intel.com/en-us/html5/xdk-iot. To see the technical details of the sample, 
-please visit the sample article page at https://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-and-html5-samples.
+This is [a fork of the Local Temperature Node.js sample application](https://github.com/gomobile/iotapp-local-temperature) distributed within Intel® XDK IoT Edition. The code was completely refactored.
+
+This app shows how to run a node.js server on an Intel Galileo board. It uses a temperature sensor to periodically read the current room temperature. That temperature is shown on an LCD display. Additionally the server accepts WebSocket connections via socket.io. Connected clients will be periodically informed about the current temperature. 
+
+![Screenshot](../../images/output_lcd_display.jpg)
 
 
-Important App Files
----------------------------
-* main.js
-* package.json
-* icon.png
-* README.md
 
-License Information Follows
----------------------------
+## License
+
+Copyright (c) 2015, Johannes Hoppe
 Copyright (c) 2014, Intel Corporation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
@@ -44,24 +38,3 @@ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
 HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
 OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-mraa
---------------------------------------------
-* Included on the IoTDevkit Linux Image 
-
-* source:  https://github.com/intel-iot-devkit/mraa
-* license:  https://github.com/intel-iot-devkit/mraa/blob/9d488c8e869e59e1dff2c68218a8f38e9b959cd7/cmake/modules/LICENSE_1_0.txt
-
-express
---------------------------------------------
-http://expressjs.com/
-
-* source: https://github.com/strongloop/express
-* license: https://github.com/strongloop/express/blob/master/LICENSE
-
-socket.io
---------------------------------------------
-http://socket.io/
-
-* source: https://github.com/Automattic/socket.io
-* license: https://github.com/Automattic/socket.io/blob/master/LICENSE

@@ -1,7 +1,7 @@
 {
-  "name": "LocalTemperature",
-  "description": "",
-  "version": "0.0.0",
+  "name": "LocalTemperature Fork",
+  "description": "This app uses a temperature sensor to periodically read the current room temperature.",
+  "version": "0.0.1",
   "main": "main.js",
   "engines": {
     "node": ">=0.10.0"
