@@ -1,6 +1,3 @@
-#Spartakiade 2015
-![Logo](images/spartakiade-logo.png)
-
 # Intel Galileo Gen 2
 
 Während des Workshops kommt das Intel® Galileo Gen 2 Board zum Einsatz. Es ist ein [Arduino](http://en.wikipedia.org/wiki/Arduino)-zertifiziertes Board, welches gut für IoT-Einsteiger geeignet ist. Der Einplatinencomputer überzeugt mit seiner kompakten Größe, universellen Einsetzbarkeit und vielseitigen Erweiterbarkeit. Das Galileo Baord basiert auf dem Intel® Quark X1000 Prozessor mit 400 MHz, einem 32-Bit Intel® Prozessor der Pentium Klasse und ist mit einem 256 MB großen DDR3 Arbeitsspeicher ausgestattet. Die blaue Schachtel ist übrigens auch ziemlich cool.

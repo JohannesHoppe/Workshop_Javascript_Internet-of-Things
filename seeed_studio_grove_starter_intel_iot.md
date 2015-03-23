@@ -1,6 +1,3 @@
-#Spartakiade 2015
-![Logo](images/spartakiade-logo.png)
-
 ## Grove Starter Kit Plus - Intel IoT Edition
 
 Während des Workshops kommt das "Seeed Studio Grove starter kit plus - Intel IoT Edition for Intel Galileo Gen 2" zum Einsatz. Das Kit besteht aus eine Base-Shield welche den Arduino mit den Grove-Komponenten verbindet. Das Prinzip ähnelt einem Elektrobaukasten: Teile zusammenstecken und los geht es.
