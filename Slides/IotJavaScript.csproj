@@ -39,6 +39,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="images\busch_electronic.png" />
+    <Content Include="index_small.html" />
     <Content Include="examples\HelloWorldAngular.js" />
     <Content Include="examples\HelloWorldAngular.html" />
     <Content Include="images\blinking_led.gif" />
@@ -47,7 +49,6 @@
     <Content Include="images\box_galileo.png" />
     <Content Include="images\box_seeedstudio-grove.png" />
     <Content Include="images\breadboard_blinky.png" />
-    <Content Include="images\galileo_blinking_bb.svg" />
     <Content Include="images\galileo_components.png" />
     <Content Include="images\grove\actuator_lcd.jpg" />
     <Content Include="images\grove\actuator_servo.jpg" />

@@ -1,0 +1,351 @@
+﻿<!doctype html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Vortrag: Internet of Things (IoT) mit JavaScript</title>
+
+        <meta name="description" content="Vortrag: Vortrag: Internet of Things (IoT) mit JavaScript (Node.js Cordova, AngularJS und Ionic)">
+        <meta name="author" content="Johannes Hoppe">
+        
+        <link rel="shortcut icon" href="images/favicon.ico" >
+        <meta property="og:image" content="images/logo.png" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="lib/font/font-awesome/css/font-awesome.min.css" />
+        <link href="lib/font/ionicons/css/ionicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/theme/neutral.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+        <link href="lib/css/github.css" rel="stylesheet" />   
+        
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    
+                    <img src="images/logo.svg" width="50%"  alt="" />  
+                    <h1 class="nowrap" style="font-size: 1.8em;margin-top: 20px;">IoT mit JavaScript</h1>                        
+
+                    <br class="hidePrint" />
+                    <br class="hidePrint" />
+                    <small class="hidePrint">Navigation mit <span class="key">Esc</span>, <span class="key">→</span> und <span class="key">↓</span></small>  
+                </section>
+                
+                <section>
+                    <section data-markdown>
+                        ![johannes](images/johannes.png)
+                     
+                        ### [Johannes Hoppe](http://JohannesHoppe.de)
+                    </section>     
+                    
+                    <section data-markdown>
+                        [![retro](images/busch_electronic.png)](http://www.busch-model.com/sf/experi.htm)
+                    </section>
+                </section>
+                
+                <section>
+
+                    <section>
+                        <img src="images/box_galileo.png" alt="" width="50%" />
+                    </section> 
+
+                    <section data-markdown>
+                        <img src="images/logo_arduino.svg" alt="" width="20%" />
+                        
+                        1. Diverse untereinander kompatible Platinen mit Microcontroller<br/><small>("Board")</small>
+                        2. Name einer Programmiersprache und IDE<br/><small>(Programme nennt man "Sketch")</small>
+                    </section>
+                    
+                    <section data-markdown>
+                        ## &nbsp;Arduino Uno
+                        <small>16MHz</small>
+                        
+                        <img src="images/board_arduino_uno.svg" width="40%" alt="" />
+                        <small>
+                            <ul>
+                                <li>3x GND ("Ground") Pins (&rarr; Masse)</li>
+                                <li>Oben: Digitale Input und Output Pins</li>
+                                <li>Unten rechts: Analoge Input Pins</li>
+                                <li>Unten links: Versorgungs-Pins</li>
+                            </ul>
+                        </small>
+                    </section>      
+                    
+                    <section>
+                        <img src="images/logo_intel-galileo.png" alt="" width="40%" />
+                    </section> 
+                                        
+                    <!--
+                        see: http://linuxgizmos.com/intel-unveils-second-generation-galileo-hacker-sbc/
+                        see: http://www.conrad.de/ce/de/product/1234343/Intel-Galileo-Gen-2-256-MB
+                        see: http://www.generationrobots.com/de/401641-arduino-intel-galileo-board.html
+                        -->
+                    <section data-markdown>
+                        ## &nbsp;Galileo Gen2  
+                        <small><b>400 MHz</b></small>
+                        
+                        <img src="images/board_galileo_gen2.svg" width="50%" alt="" />
+                        <small>
+                            <ul>
+                                <li>von Intel®</li>
+                                <li>identische Pin-Anordnung wie bei Arduino Uno REV 3 ("Arduino 1.0 Pinout")</li>
+                                <li>unterstützt Arduino Shields mit 3.3 V und 5 V (&rarr; IOREF Jumper)</li>
+                                <li>Zusätzlich u.a.: Mini-PCI Express, Ethernet 10/100 Mbps, Micro-SD, USB-Client, USB-Host...</li>
+                            </ul>
+                            
+                        </small>
+                    </section>
+                          
+
+                    
+                    <section data-markdown>
+                        <img src="images/blinking_led.gif" alt="" />
+
+                        ```c contenteditable       
+                        // Blinking LED - Arduino Sketch  
+
+                        int led = 13;
+
+                        void setup() {
+                          pinMode(led, OUTPUT);
+                        }    
+
+                        void loop() {
+                          digitalWrite(led, HIGH);
+                          delay(1000);
+                          digitalWrite(led, LOW);
+                          delay(1000);
+                        }
+                        ```
+                    </section> 
+                    
+                    <section data-markdown>
+                        <img src="images/blinking_led.gif" alt="" />
+                        
+                        <img src="" alt="" style="float:right"/>
+                        <ul class="model">
+                            <li class="fragment">
+                                <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/PinMode">pinMode()</a> &nbsp; &nbsp;&nbsp;</span>
+                                <small>Configures the specified pin to behave either as an input or an output.</small>
+                            </li> 
+                            <li class="fragment">
+                                <span><a href="http://arduino.cc/en/Reference/DigitalRead">digitalRead()</a>&nbsp;</span>
+                                <small>Reads the value from a specified digital pin, either HIGH or LOW.</small>
+                            </li>
+                            <li class="fragment">
+                                <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/DigitalWrite">digitalWrite()</a>&nbsp;</span>
+                                <small>Write a HIGH (3.3/5 volts) or a LOW (0 volt, ground) value to a digital pin.</small>
+                            </li> 
+
+                            <li class="fragment">
+                                <span><a href="http://arduino.cc/en/Reference/AnalogRead">analogRead()</a></span>
+                                <small>Reads the value from the specified <b>analog</b> input pin.</small>
+                            </li>
+                            <li class="fragment">
+                                <span><a href="http://arduino.cc/en/pmwiki.php?n=Reference/AnalogWrite">analogWrite()</a></span>
+                                <small>Writes an 'analog' value (<a href="http://arduino.cc/en/Tutorial/PWM">PWM wave</a>) to a <b>digital</b> pin (marked with ~).</small>
+                            </li>  
+                        </ul>  
+                    </section>   
+                     
+                    <section data-markdown>
+                        ## PWM
+                        <img src="images/pwm.gif" alt="Pulse Width Modulation" title="Pulse Width Modulation" width="50%" />
+                    </section>  
+                    
+                    <!--
+                        see: http://ms-iot.github.io/content/HelloBlinky.htm
+                        -->
+                    <section data-markdown>
+                        ## Breadboards
+                        <small>[Widerstand](http://www.leds.de/Widerstandsrechner/) nicht vergessen!</small>
+                        
+                        <img src="images/breadboard_blinky.png" alt="Breadboard - Steckboard/Experimentierboard" title="Breadboard - Steckboard/Experimentierboard" />
+                    </section>                  
+                    
+                </section> 
+  
+                <section>
+
+                    <section data-markdown>
+                        <img src="images/box_seeedstudio-grove.png" alt="" width="70%" />
+                    </section>           
+                    
+                    <section data-markdown>
+                        <img src="images/logo_oshw.svg" width="30%" alt="" />
+                           
+                        <br/>
+                        <small>[Freie Hardware](http://www.oshwa.org/), wird nach [lizenzkostenfreien](http://www.ohwr.org/projects/cernohl/wiki) Bauplänen [hergestellt](http://www.instructables.com/tag/type-id/category-technology/channel-arduino/?sort=FEATURED)</small>
+
+                    </section>
+                    
+                    <section data-markdown>
+                        <img src="images/logo_seeed_studio.png" width="25%"  alt="" /> &nbsp;&nbsp; <img src="images/logo_grove.png" width="25%"  alt="" />            
+                        
+                        #### Open-Source Hardware Toolkit
+                    </section>   
+                    
+                    <section data-markdown>
+                        #### Einfache und sichere<br/>Elektronikaufbauten
+                        <img src="images/logo_grove.png" width="35%"  alt="" />
+                        <small>
+                            <ul>
+                                <li>Arduino-kompatibles Base Shield ("Stem")</li>
+                                <li>Einzelne Module ("Twig")</li>
+                                <li>alle Twigs haben ein vereinheitlichtes 4Pin Interface</li>
+                            </ul>
+                        </small>
+
+                    </section>    
+                    
+                    <section style="margin-top: -80px;">
+                            
+                        <div class="fragment" style="display: block; float:left; width:220px;"><span style="font-size:18pt"><img src="images/grove/base_shield_v2.jpg" alt="" />Base Shield v2</span></div>
+                        
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-button"><img src="images/grove/sensor_button.jpg" alt="" />Button</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-rotatory-angle"><img src="images/grove/sensor_rotaryAngle.jpg" alt="" title="Potentiometer" />Rotary Angle</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/sound"><img src="images/grove/sensor_sound.jpg" alt="" />Sound-Sensor</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-temperature"><img src="images/grove/sensor_temperature.jpg" alt="" />Temperatur-Sensor</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/touch"><img src="images/grove/sensor_touch.jpg" alt="" />Touch-Sensor</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-light-sensor"><img src="images/grove/sensor_light.jpg" alt="" />Licht-Sensor</a></div>
+
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-buzzer"><img src="images/grove/actuator_buzzer.jpg"alt="" title="Pieper" />Buzzer</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-led"><img src="images/grove/actuator_led.jpg" alt="" />LED</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-smart-relay"><img src="images/grove/actuator_relay.jpg" alt="" />Relay</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-mini-servo"><img src="images/grove/actuator_servo.jpg" alt="" />Mini-Servo</a></div>
+                        <div class="fragment" style="display: block; float:left; width:220px;"><a style="font-size:18pt" href="https://software.intel.com/en-us/iot/sensor/grove-lcd-rgb-backlight"><img src="images/grove/actuator_lcd.jpg" alt="" />LCD RGB Backlight</a></div>
+                                                                                                   
+                    </section>                                                       
+                                
+                </section>                 
+                              
+                <section>
+
+                    <section data-markdown>
+                        ![Logo Node.js](images/logo_node.js.svg)
+                    </section> 
+                    
+                    <section data-markdown>
+                        <img src="images/logo_nodejs_hex.png" style="width: 20%" />                   
+                        
+                        V8, NPM, CommonJS
+                    </section>    
+                    
+                    <section data-markdown>
+                        <img src="images/blinking_led.gif" alt="" />
+
+                        ```js contenteditable       
+                        // Blinking LED - Node.js
+                                            
+                        var mraa = require('mraa');
+                            myOnboardLed = new mraa.Gpio(13),
+                            ledState = true;
+
+                        myOnboardLed.dir(mraa.DIR_OUT);
+
+                        function loop()
+                        {
+                            myOnboardLed.write(ledState ? 1 : 0);
+                            ledState = !ledState;
+                            setTimeout(loop, 1000);
+                        }
+                        
+                        loop();
+                        ```
+                    </section>                                                     
+                                
+                </section>                
+
+                <section>
+                    
+                    <section data-markdown>
+                        ## Downloads
+                        
+                        ![tools](images/icon_file.png)
+
+                        #### [github.com/JohannesHoppe](https://github.com/JohannesHoppe/Workshop_Javascript_Internet-of-Things/)
+                    </section> 
+                   
+                </section>
+
+                <section data-markdown>
+                    # Danke!
+                    
+                    <br/>
+
+                    * <i class="fa fa-home"></i> &nbsp;<b>[johanneshoppe.de](http://johanneshoppe.de)</b>
+                    * <i class="fa fa-twitter-square"></i> &nbsp;<b>[@JohannesHoppe](https://twitter.com/JohannesHoppe)</b>
+                    * <i class="fa fa-facebook-square"></i> &nbsp;<b>[Johannes.Hoppe](https://www.facebook.com/johannes.hoppe)</b>
+                </section> 
+            </div>
+
+        </div>
+        
+        <div class="pesentation-details">
+            <p>
+                Created by <a href="http://haushoppe-its.de" target="_blank">Johannes Hoppe</a>
+                <span >| <a href="?print-pdf" tooltip="activates PDF print stylesheet" target="_blank">Print PDF</a></span>
+            </p>
+        </div>
+
+
+        <script src="js/require.js"></script> 
+        <script src="js/require.config.js"></script> 
+           
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script> 
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                //minScale: 0.2,
+                //maxScale: 1.0,
+                controls: true,
+                progress: true,
+                history: true,
+                keyboard: true,
+                overview: true,
+                center: true,
+                rollingLinks: false,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } },
+                    { src: 'plugin/showSource/showSource.js' }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+    </body>
+</html>
