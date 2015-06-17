@@ -39,8 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="images\Intel IoT Developer Kit Architektur.png" />
+    <Content Include="index_dwx.html" />
     <Content Include="images\busch_electronic.png" />
-    <Content Include="index_small.html" />
     <Content Include="examples\HelloWorldAngular.js" />
     <Content Include="examples\HelloWorldAngular.html" />
     <Content Include="images\blinking_led.gif" />
@@ -118,6 +119,7 @@
     <Content Include="images\johannes.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\pixel.png" />
+    <Content Include="index_short.html" />
     <Content Include="js\domReady.js">
       <DependentUpon>require.js</DependentUpon>
     </Content>
