@@ -1,8 +1,8 @@
-#Intel IoT on Galileo with mobile companion app
+# Intel IoT on Galileo with mobile companion app
 
 Welcome to the examples files from the last workshop. During the workshop we used the [Intel Development Kit for IoT (IoTDK)](https://software.intel.com/en-us/iot/devkit) to create and test applications for the Intel Galileo maker board. You can open and run both applications with the [Intel XDK IoT Edition](https://software.intel.com/en-us/html5/xdk-iot).
 
-##[iotapp-local-temperature](iotapp-local-temperature)
+## [iotapp-local-temperature](iotapp-local-temperature)
 
 This is [a fork of the Local Temperature Node.js sample application](https://github.com/gomobile/iotapp-local-temperature) distributed within Intel® XDK IoT Edition. The code was completely refactored.
 
@@ -12,7 +12,7 @@ This app shows how to run a node.js server on an Intel Galileo board. It uses a 
 
 
 
-##[iot-companion-spartakiade-app](iot-companion-spartakiade-app)
+## [iot-companion-spartakiade-app](iot-companion-spartakiade-app)
 
 This is a full replacement for the original [Local Temperature Companion App](https://github.com/gomobile/sample-iot-companion-local-temperature).
 
